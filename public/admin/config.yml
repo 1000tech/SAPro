@@ -1,0 +1,101 @@
+backend:
+    name: github
+    repo: 1000tech/SAPro
+    branch: main
+    base_url: /api/oauth
+    auth_endpoint: auth
+
+locale: 'de'
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+i18n:
+    structure: multiple_folders
+    locales: [de, en, ru]
+    default_locale: de
+
+collections:
+  - name: "pages"
+    label: "Seiten"
+    label_singular: "Seite"
+    description: "Website-Seiten erstellen und bearbeiten"
+    folder: "content"
+    media_folder: "/public/uploads"
+    public_folder: "/uploads"
+    path: "{{locale}}/{{slug}}"
+    create: true
+    slug: "{{slug}}"
+    i18n: true
+    filter:
+        field: "type"
+        value: "page"
+    fields:
+        - { label: "Typ", name: "type", widget: "hidden", default: "page" }
+        - { label: "Titel", name: "title", widget: "string", i18n: true }
+        - { label: "Inhalt", name: "body", widget: "markdown", i18n: true }
+
+  - name: "menus"
+    label: "Menü"
+    description: "Hauptmenüeinträge je Sprache bearbeiten"
+    files:
+      - label: "Deutsch"
+        name: "menu_de"
+        file: "content/de/_menu.md"
+        fields:
+          - label: "Menüpunkte"
+            name: "items"
+            widget: "list"
+            collapsed: false
+            summary: "{{fields.label}} → {{fields.path}}"
+            fields:
+              - { label: "Bezeichnung", name: "label", widget: "string" }
+              - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
+      - label: "Englisch"
+        name: "menu_en"
+        file: "content/en/_menu.md"
+        fields:
+          - label: "Menüpunkte"
+            name: "items"
+            widget: "list"
+            collapsed: false
+            summary: "{{fields.label}} → {{fields.path}}"
+            fields:
+              - { label: "Bezeichnung", name: "label", widget: "string" }
+              - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
+      - label: "Russisch"
+        name: "menu_ru"
+        file: "content/ru/_menu.md"
+        fields:
+          - label: "Menüpunkte"
+            name: "items"
+            widget: "list"
+            collapsed: false
+            summary: "{{fields.label}} → {{fields.path}}"
+            fields:
+              - { label: "Bezeichnung", name: "label", widget: "string" }
+              - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
+
+  - name: "texts"
+    label: "Globale Texte"
+    description: "Kopf- und Fußzeilentexte der Website bearbeiten"
+    files:
+      - label: "Deutsch"
+        name: "texts_de"
+        file: "content/de/_texts.md"
+        fields:
+          - { label: "Kopfzeile", name: "header", widget: "string", hint: "Text in der Kopfzeile der Website" }
+          - { label: "Fußzeile", name: "footer", widget: "string", hint: "Text in der Fußzeile der Website" }
+      - label: "Englisch"
+        name: "texts_en"
+        file: "content/en/_texts.md"
+        fields:
+          - { label: "Kopfzeile", name: "header", widget: "string", hint: "Text in der Kopfzeile der Website" }
+          - { label: "Fußzeile", name: "footer", widget: "string", hint: "Text in der Fußzeile der Website" }
+      - label: "Russisch"
+        name: "texts_ru"
+        file: "content/ru/_texts.md"
+        fields:
+          - { label: "Kopfzeile", name: "header", widget: "string", hint: "Text in der Kopfzeile der Website" }
+          - { label: "Fußzeile", name: "footer", widget: "string", hint: "Text in der Fußzeile der Website" }
