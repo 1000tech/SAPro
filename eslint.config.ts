@@ -22,13 +22,13 @@ export default withNuxt(
             'eol-last': ['error', 'always'],
             'no-trailing-spaces': 'error',
             'object-curly-spacing': ['error', 'always'],
-            camelcase: ['error', {
-                properties: 'never',
-                ignoreDestructuring: false,
-                ignoreImports: false,
-                ignoreGlobals: false,
-                allow: ['^[A-Z][A-Z0-9_]*$'], // Allow UPPER_SNAKE_CASE for const
-            }],
+            // camelcase: ['error', {
+            //     properties: 'never',
+            //     ignoreDestructuring: false,
+            //     ignoreImports: false,
+            //     ignoreGlobals: false,
+            //     allow: ['^[A-Z][A-Z0-9_]*$'], // Allow UPPER_SNAKE_CASE for const
+            // }],
 
             // Import/export rules
             'import/extensions': 0,

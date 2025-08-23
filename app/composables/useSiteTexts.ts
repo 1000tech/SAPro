@@ -4,6 +4,9 @@ import type { AsyncData, NuxtError } from '#app'
 export type SiteTexts = {
     header: string
     footer: string
+    error_404_title: string
+    error_404_description: string
+    error_404_button: string
 }
 
 export const useSiteTexts = (): AsyncData<SiteTexts | undefined, NuxtError<unknown> | undefined> => {
@@ -12,8 +15,20 @@ export const useSiteTexts = (): AsyncData<SiteTexts | undefined, NuxtError<unkno
         () => `texts-${locale.value}`,
         async () => {
             const doc = await queryContent<SiteTexts>(`/${locale.value}/_texts`).findOne()
-            const { header = '', footer = '' } = (doc ?? {}) as Partial<SiteTexts>
-            return { header, footer }
+            const {
+                header = '',
+                footer = '',
+                error_404_title = '',
+                error_404_description = '',
+                error_404_button = '',
+            } = (doc ?? {}) as Partial<SiteTexts>
+            return {
+                header,
+                footer,
+                error_404_title,
+                error_404_description,
+                error_404_button,
+            }
         },
         { watch: [locale] },
     )
