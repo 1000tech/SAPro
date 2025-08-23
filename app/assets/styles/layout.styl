@@ -4,3 +4,39 @@
 ::selection
     background $blue
     color $white
+
+/* 1. BASE STYLES */
+/* ======================== */
+body
+    font-family 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+/* 2. ANIMATIONS */
+/* ============= */
+@keyframes backgroundShift
+    0%
+        background linear-gradient(135deg, #0a0a0a, #1a1a2e, #16213e)
+    100%
+        background linear-gradient(135deg, #16213e, #1a1a2e, #0a0a0a)
+
+@keyframes scan
+    0%
+        transform translateX(-100%)
+    100%
+        transform translateX(100%)
+
+@keyframes pulse
+    0%
+        opacity 1
+        transform scale(1)
+    50%
+        opacity 0.5
+        transform scale(1.2)
+    100%
+        opacity 1
+        transform scale(1)
+
+@keyframes gridMove
+    0%
+        transform translate(0, 0)
+    100%
+        transform translate(20px, 20px)

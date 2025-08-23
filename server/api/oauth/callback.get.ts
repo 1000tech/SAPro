@@ -10,7 +10,8 @@ type TokenParams = {
 type TokenResponse = { access_token: string }
 
 async function exchangeCodeForToken({ clientId, clientSecret, code, redirectUri }: TokenParams): Promise<TokenResponse> {
-    const res = await $fetch('https://github.com/login/oauth/access_token', {
+    const access_endpoint = 'https://github.com/login/oauth/access_token'
+    const res = await $fetch(access_endpoint, {
         method: 'POST',
         headers: {
             Accept: 'application/json',

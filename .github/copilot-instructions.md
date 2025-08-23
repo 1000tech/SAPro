@@ -42,24 +42,42 @@ server/
 
 ## Code Conventions
 
+### EditorConfig
+- Always respect the repository's `.editorconfig` settings (indent style/size, charset, EOL, final newline, trimming trailing whitespace).
+- When creating or editing files, ensure formatting matches `.editorconfig`; do not override it with per-file settings.
+- Avoid reformatting unrelated lines; preserve existing style unless required by `.editorconfig`.
+
 ### TypeScript
+
 - Use strict typing
 - Prefer `interface` over `type` for objects
 - Use composables from `#imports` for Nuxt functions
 
 ### Vue Composition
+
 - Use `<script setup lang="ts">`
 - Composables should start with `use` (e.g., `useSiteTexts`, `useMenu`)
 - Use `computed()` for reactive computations
 - Use `ref()` and `reactive()` for reactive data
 
 ### Styling
+
 - Use Tailwind CSS classes for styling
 - For custom styles use Stylus in `app/assets/styles/`
 - Support dark theme through `dark:` prefixes
 - Use `transition-colors` for smooth theme transitions
 
+### Typography
+
+- Use en dash (–, U+2013) for ranges and parenthetical dashes; avoid em dash (—, U+2014).
+- In all content and UI texts, replace em dashes with en dashes unless a specific style requires otherwise.
+- Examples:
+  - "Munich – Augsburg" for ranges
+  - "fast – reliable – fair"
+  - Avoid "—"; prefer "–"
+
 ### Internationalization
+
 - Content is stored in `content/{locale}/` folders
 - Use `useLocalePath()` for localized links
 - Interface texts are loaded via `useSiteTexts()` composable
@@ -67,11 +85,13 @@ server/
 - Supported locales: `de` (default), `en`, `ru`
 
 ### Routing
+
 - Use `[...slug].vue` for dynamic pages
 - Localization via prefix strategy (except default locale)
 - `NuxtLink` components for navigation
 
 ### Content Management
+
 - Markdown files in `content/` folders by language
 - Decap CMS config in `public/admin/config.yml`
 - GitHub OAuth for CMS authentication
@@ -79,6 +99,7 @@ server/
 ## Code Examples
 
 ### Composable with i18n
+
 ```typescript
 export const useSiteTexts = () => {
   const { locale } = useI18n()
@@ -87,6 +108,7 @@ export const useSiteTexts = () => {
 ```
 
 ### Component with dark theme
+
 ```vue
 <template>
   <div class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
@@ -96,6 +118,7 @@ export const useSiteTexts = () => {
 ```
 
 ### Localized navigation
+
 ```vue
 <template>
   <NuxtLink :to="localePath('/about')">
