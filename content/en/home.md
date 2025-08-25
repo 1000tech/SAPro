@@ -56,6 +56,6 @@ cta_buttons:
     variant: outline
 ---
 
-Your facility service for Munich and surrounding areas. Fast, reliable, and fairly priced – we take care of your home and garden.
+Your facility service for Munich and surrounding areas. Fast and reliable – we take care of your home and garden.
 
 Garden care, cleaning, kitchen assembly, small moves, flooring, installation of standardized building parts, clearing services, as well as maintenance & repair – all from a single source.

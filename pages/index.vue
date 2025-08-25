@@ -35,50 +35,50 @@ useSeoMeta({
 </script>
 
 <template>
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1>{{ page?.title || 'Home' }}</h1>
-            <p v-if="page?.hero_subtitle" class="hero-subtitle">{{ page.hero_subtitle }}</p>
-            <div class="hero-description">
+    <header class="hero-section p-8 px-6 md:p-12 lg:p-16 border-2 border-[#3790d8] rounded-b-[15px] flex flex-col text-center items-center gap-8 min-h-[60vh] relative overflow-hidden">
+        <div class="hero-content relative flex-1 max-w-[600px]">
+            <h1 class="text-2xl md:text-2.5xl lg:text-2.8xl font-bold text-[#3790d8] mb-4 leading-tight font-mono relative z-2">{{ page?.title || 'Home' }}</h1>
+            <p v-if="page?.hero_subtitle" class="hero-subtitle text-lg text-[#2c7bc4] font-semibold mb-6">{{ page.hero_subtitle }}</p>
+            <div class="hero-description text-base text-[#555] mb-8 leading-7">
                 <ContentRenderer v-if="page" :value="page" />
             </div>
-            <div class="hero-buttons">
-                <button v-if="page?.hero_buttons?.primary_label" class="btn-primary">{{ page.hero_buttons.primary_label }}</button>
-                <button v-if="page?.hero_buttons?.secondary_label" class="btn-secondary">{{ page.hero_buttons.secondary_label }}</button>
+            <div class="hero-buttons flex gap-4 flex-wrap flex-col items-center md:flex-row md:items-start">
+                <button v-if="page?.hero_buttons?.primary_label" class="btn-primary uppercase">{{ page.hero_buttons.primary_label }}</button>
+                <button v-if="page?.hero_buttons?.secondary_label" class="btn-secondary uppercase">{{ page.hero_buttons.secondary_label }}</button>
             </div>
         </div>
-        <div class="hero-image">
-            <Icon name="fa-solid:home" style="color: #3790d8; animation: pulse 2s infinite;" />
+    <div class="hero-image flex-1 flex justify-center items-center">
+            <Icon name="fa-solid:home"/>
         </div>
     </header>
 
-    <section class="services-overview">
-        <h2>{{ page?.services_title }}</h2>
-        <div class="services-grid">
-            <div v-for="(s, idx) in (page?.services || [])" :key="idx" class="service-card">
+    <section class="services-overview py-8 px-6 md:py-16 md:px-12">
+        <h2 class="text-center text-2xl lg:text-2.2xl text-[#3790d8] mb-12 font-bold">{{ page?.services_title }}</h2>
+        <div class="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
+            <div v-for="(s, idx) in (page?.services || [])" :key="idx" class="service-card bg-gradient-to-br from-white to-[#f8f9fa] p-8 rounded-xl text-center shadow-lg border border-[#3790d8] relative overflow-hidden hover:scale-105 hover:shadow-2xl hover:border-[#feeacf] transition-all">
                 <Icon :name="s.icon ?? ''" />
-                <h3>{{ s.title }}</h3>
-                <p>{{ s.description }}</p>
+                <h3 class="text-lg text-[#3790d8] mb-4 font-semibold">{{ s.title }}</h3>
+                <p class="text-[#666] leading-6">{{ s.description }}</p>
             </div>
         </div>
     </section>
 
-    <section class="why-choose-us">
-        <h2>{{ page?.why_title }}</h2>
-        <div class="features-grid">
-            <div v-for="(f, idx) in (page?.features || [])" :key="idx" class="feature">
+    <section class="why-choose-us py-8 px-6 md:py-16 md:px-12">
+        <h2 class="text-center text-2xl lg:text-2.2xl text-[#3790d8] mb-12 font-bold">{{ page?.why_title }}</h2>
+        <div class="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1000px] mx-auto">
+            <div v-for="(f, idx) in (page?.features || [])" :key="idx" class="feature text-center p-8">
                 <Icon :name="f.icon ?? ''" />
-                <h4>{{ f.title }}</h4>
-                <p>{{ f.text }}</p>
+                <h4 class="text-base text-[#3790d8] mb-2 font-semibold">{{ f.title }}</h4>
+                <p class="text-[#666]">{{ f.text }}</p>
             </div>
         </div>
     </section>
 
-    <section class="cta-section">
+    <section class="cta-section py-8 px-6 md:py-16 md:px-12 bg-gradient-to-br from-[#3790d8] to-[#2c7bc4] text-center text-white">
         <div class="cta-content">
-            <h2>{{ page?.cta_title }}</h2>
-            <p>{{ page?.cta_text }}</p>
-            <div class="cta-buttons">
+            <h2 class="text-2xl lg:text-2.2xl mb-4 font-bold">{{ page?.cta_title }}</h2>
+            <p class="text-lg mb-8 opacity-90">{{ page?.cta_text }}</p>
+            <div class="cta-buttons flex gap-4 justify-center flex-wrap flex-col items-center md:flex-row md:items-start">
                 <template v-for="(b, idx) in (page?.cta_buttons || [])" :key="idx">
                     <NuxtLink
                         v-if="b?.href && b.href.startsWith('/')"
@@ -105,14 +105,10 @@ useSeoMeta({
 <style lang="stylus">
 .hero-section
     background linear-gradient(135deg, rgba(55, 144, 216, 0.1), rgba(254, 234, 207, 0.8))
-    padding 2rem 1.5rem
     display flex
     flex-direction column
     text-align center
     align-items center
-    min-height 60vh
-    border 2px solid #3790d8
-    border-radius 0 0 15px 15px
     position relative
     overflow hidden
 
@@ -127,13 +123,14 @@ useSeoMeta({
         animation scan 3s linear infinite
 
     @media (min-width: $screen-md)
-        padding 4rem 3rem
+        padding 2.8rem
 
     @media (min-width: $screen-lg)
         flex-direction row
         text-align left
 
 .hero-content
+    position relative
     flex 1
     max-width 600px
 
@@ -152,7 +149,7 @@ useSeoMeta({
             font-size 2.5rem
 
         @media (min-width: $screen-lg)
-            font-size 3rem
+            font-size 2.8rem
 
 .hero-subtitle
     font-size 1.2rem
@@ -161,14 +158,13 @@ useSeoMeta({
     margin-bottom 1.5rem
 
 .hero-description
-    font-size 1.1rem
+    font-size 1rem
     color #555
     margin-bottom 2rem
     line-height 1.7
 
 .hero-buttons
     display flex
-    gap 1rem
     flex-wrap wrap
     flex-direction column
     align-items center
@@ -176,7 +172,7 @@ useSeoMeta({
     button
         text-transform uppercase
 
-    @media (min-width: $screen-md)
+    @media (min-width $screen-md)
         flex-direction row
         align-items initial
 
@@ -185,23 +181,17 @@ useSeoMeta({
     display flex
     justify-content center
     align-items center
-    margin-left 0
-    margin-top 2rem
 
     .iconify
         font-size 8rem
         color #3790d8
-        opacity 0.3
+        opacity 0.8
 
-        @media (min-width: $screen-lg)
+        @media (min-width $screen-lg)
             font-size 12rem
 
-    @media (min-width: $screen-lg)
-        margin-left 2rem
-        margin-top 0
-
 .btn-primary, .btn-secondary, .btn-outline
-    padding 1rem 2rem
+    padding 1rem 1.5rem
     border none
     border-radius 8px
     font-size 1rem
@@ -213,8 +203,9 @@ useSeoMeta({
     text-align center
     width 100%
     max-width 300px
+    font-family 'Courier New', monospace
 
-    @media (min-width: $screen-md)
+    @media (min-width $screen-md)
         width auto
         max-width none
 
@@ -225,7 +216,6 @@ useSeoMeta({
     overflow hidden
     text-transform uppercase
     letter-spacing 1px
-    font-family 'Courier New', monospace
 
     &::before
         content ''
@@ -249,7 +239,6 @@ useSeoMeta({
     background-color transparent
     color #3790d8
     border 2px solid #3790d8
-    font-family 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
     &:hover
         background-color #3790d8
@@ -265,11 +254,11 @@ useSeoMeta({
         margin-bottom 3rem
         font-weight 700
 
-        @media (min-width: $screen-lg)
-            font-size 2.5rem
+        @media (min-width $screen-lg)
+            font-size 2.2rem
 
     // Tablet and up
-    @media (min-width: $screen-md)
+    @media (min-width $screen-md)
         padding 4rem 3rem
 
 .services-grid
@@ -324,39 +313,27 @@ useSeoMeta({
         line-height 1.6
 
 .why-choose-us
-    padding 2rem 1.5rem
     .light &
         background linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)
-
     .dark &
         background linear-gradient(135deg, #071018 0%, #0b1218 100%)
         border 1px solid rgba(255,255,255,0.04)
         box-shadow 0 4px 20px rgba(2,6,12,0.6)
         color #e6eef8
-
     h2
         text-align center
         font-size 2rem
         color #3790d8
-        margin-bottom 3rem
         font-weight 700
-
-        @media (min-width: $screen-lg)
-            font-size 2.5rem
-
-    @media (min-width: $screen-md)
-        padding 4rem 3rem
+        @media (min-width $screen-lg)
+            font-size 2.2rem
 
 .features-grid
     display grid
     grid-template-columns repeat(auto-fit, minmax(250px, 1fr))
-    gap 2rem
-    max-width 1000px
-    margin 0 auto
 
 .feature
     text-align center
-    padding 2rem
 
     .iconify
         font-size 2.5rem
@@ -378,7 +355,7 @@ useSeoMeta({
     text-align center
     color white
 
-    @media (min-width: $screen-md)
+    @media (min-width $screen-md)
         padding 4rem 3rem
 
 .cta-content
@@ -387,8 +364,8 @@ useSeoMeta({
         margin-bottom 1rem
         font-weight 700
 
-        @media (min-width: $screen-lg)
-            font-size 2.5rem
+        @media (min-width $screen-lg)
+            font-size 2.2rem
 
     p
         font-size 1.2rem
@@ -400,11 +377,10 @@ useSeoMeta({
     gap 1rem
     justify-content center
     flex-wrap wrap
+    flex-direction column
+    align-items center
 
     .btn-primary
-        background-color #feeacf
-        color #3790d8
-
         &:hover
             background-color #f5dbb8
 
@@ -416,10 +392,7 @@ useSeoMeta({
             background-color white
             color #3790d8
 
-    flex-direction column
-    align-items center
-
-    @media (min-width: $screen-md)
+    @media (min-width $screen-md)
         flex-direction row
         align-items initial
 </style>
