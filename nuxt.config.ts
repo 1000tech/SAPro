@@ -5,7 +5,7 @@ export default defineNuxtConfig({
         '@nuxt/content',
         '@nuxt/eslint',
         '@nuxtjs/i18n',
-        // '@nuxtjs/seo',
+        '@nuxtjs/seo',
         '@nuxtjs/tailwindcss',
         '@nuxt/icon',
         '@nuxtjs/color-mode',
@@ -20,7 +20,6 @@ export default defineNuxtConfig({
         githubClientSecret: process.env.GITHUB_CLIENT_SECRET,
         oauthRedirectUrl: process.env.OAUTH_REDIRECT_URL ?? '',
         public: {
-            // Expose locales for client
             locales: ['de', 'en', 'ru'],
         },
     },
@@ -39,7 +38,6 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
-            title: 'Nuxt + Decap CMS i18n Starter',
             meta: [
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             ],
@@ -51,12 +49,27 @@ export default defineNuxtConfig({
         classSuffix: '', // use .dark and .light classes without suffix
         storageKey: 'nuxt-color-mode',
     },
-    css: ['../app/assets/styles/layout.styl'],
+    site: {
+        url: 'https://sapro-hm.com',
+        name: 'SAPro-Hausmeisterservice',
+    },
+    schemaOrg: {
+        identity: 'Organization',
+    },
+    seo: {
+        meta: {
+            description: '',
+            themeColor: [
+                { content: '#302bdc', media: '' },
+            ],
+        },
+    },
+    css: ['../assets/styles/layout.styl'],
     vite: {
         css: {
             preprocessorOptions: {
                 stylus: {
-                    imports: ['../app/assets/styles/_vars.styl'],
+                    imports: ['../assets/styles/_vars.styl'],
                 },
             },
         },

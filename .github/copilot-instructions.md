@@ -2,11 +2,11 @@
 
 ## About the Project
 
-This is a multilingual website built with Nuxt 4, featuring Decap CMS integration and GitHub OAuth authentication. The project uses i18n to support three languages: German (default), English, and Russian.
+This is a multilingual website built with Nuxt 3, featuring Decap CMS integration and GitHub OAuth authentication. The project uses i18n to support three languages: German (default), English, and Russian.
 
 ## Technology Stack
 
-- **Framework**: Nuxt 4 with TypeScript
+- **Framework**: Nuxt 3 with TypeScript
 - **Styling**: Tailwind CSS + Stylus
 - **Content**: @nuxt/content (Markdown files)
 - **Internationalization**: @nuxtjs/i18n (de/en/ru)
@@ -19,7 +19,7 @@ This is a multilingual website built with Nuxt 4, featuring Decap CMS integratio
 ## Project Structure
 
 ```
-app/                    # Main Nuxt 4 application
+app/                    # Main Nuxt 3 application
 ├── app.vue            # Main application component
 ├── components/        # Application components
 ├── composables/       # Vue composables

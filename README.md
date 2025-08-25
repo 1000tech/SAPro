@@ -1,10 +1,10 @@
-#  Nuxt 4 + Decap CMS + i18n (de/en/ru) Starter
+#  Nuxt 3 + Decap CMS + i18n (de/en/ru) Starter
 
-Minimal starter without styling: Nuxt 4 + @nuxt/content (Markdown), @nuxtjs/i18n, Decap CMS admin, GitHub OAuth endpoints for Vercel.
+Minimal starter without styling: Nuxt 3 + @nuxt/content (Markdown), @nuxtjs/i18n, Decap CMS admin, GitHub OAuth endpoints for Vercel.
 
 ## What's inside
 
-- Nuxt 4 + Nitro (Vercel preset)
+- Nuxt 3 + Nitro (Vercel preset)
 - @nuxt/content for Markdown in `content/` with locales subfolders
 - @nuxtjs/i18n with locales: en (default), de, ru
 - Decap CMS at `/admin/` with i18n enabled collections
@@ -152,7 +152,7 @@ server/api/oauth/
 
 ## Tech Stack
 
-- **Nuxt 4** - Vue.js framework
+- **Nuxt 3** - Vue.js framework
 - **@nuxt/content** - Git-based headless CMS
 - **@nuxtjs/i18n** - Internationalization
 - **Decap CMS** - Admin interface
