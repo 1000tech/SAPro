@@ -1,4 +1,4 @@
-#  Nuxt 3 + Decap CMS + i18n (de/en/ru) Starter
+#  SAProHM + Decap CMS + i18n (de/en/ru)
 
 Minimal starter without styling: Nuxt 3 + @nuxt/content (Markdown), @nuxtjs/i18n, Decap CMS admin, GitHub OAuth endpoints for Vercel.
 

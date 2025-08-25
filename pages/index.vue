@@ -20,6 +20,18 @@ interface HomePage {
 const { page: rawPage } = await usePageContent()
 const page = computed<HomePage | undefined>(() => rawPage.value as unknown as HomePage | undefined)
 const localePath = useLocalePath()
+
+// SEO Meta
+const seoTitle = computed(() => `${page.value?.title || 'Home'}`)
+const seoDescription = computed(() => page.value?.hero_subtitle || 'Welcome to our homepage')
+useSeoMeta({
+    title: seoTitle,
+    ogTitle: seoTitle,
+    description: seoDescription,
+    ogDescription: seoDescription,
+    // ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image',
+})
 </script>
 
 <template>

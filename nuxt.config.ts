@@ -51,16 +51,15 @@ export default defineNuxtConfig({
     },
     site: {
         url: 'https://sapro-hm.com',
-        name: 'SAPro-Hausmeisterservice',
+        name: 'SAPro-HM',
     },
     schemaOrg: {
         identity: 'Organization',
     },
     seo: {
         meta: {
-            description: '',
             themeColor: [
-                { content: '#302bdc', media: '' },
+                { content: '#2c7bc4', media: '' },
             ],
         },
     },

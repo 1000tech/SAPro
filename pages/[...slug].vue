@@ -1,5 +1,24 @@
 <script setup lang="ts">
 const { page, slug } = await usePageContent()
+
+// SEO Meta
+const seoTitle = computed<string>(() => {
+    const p = unref(page)
+    return `${String(p?.title ?? slug)}`
+})
+const seoDescription = computed<string>(() => {
+    const p = unref(page)
+    // prefer explicit description, then hero_subtitle, else empty
+    return String(p?.hero_subtitle ?? '')
+})
+useSeoMeta({
+    title: seoTitle,
+    ogTitle: seoTitle,
+    description: seoDescription,
+    ogDescription: seoDescription,
+    // ogImage: 'https://example.com/image.png',
+    twitterCard: 'summary_large_image',
+})
 </script>
 
 <template>
