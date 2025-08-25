@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import logo from '~/assets/images/logo.svg?url'
 import { useColorMode } from '#imports'
-import { ref } from 'vue'
+
 const { data: menu } = useMenu()
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
@@ -44,7 +45,11 @@ function closeMenu(): void {
                 >
                     <Icon name="lucide:x" class="w-5 h-5" />
                 </button>
-                <NuxtLink :to="localePath('/')">
+                <NuxtLink
+                    :to="localePath('/')"
+                    class="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                >
+                    <img :src="logo" alt="SAPro Logo" class="w-8 h-8" />
                     <h2>{{ 'SAPro-HM' }}</h2>
                 </NuxtLink>
             </header>

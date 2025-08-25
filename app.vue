@@ -1,4 +1,12 @@
 <script setup lang="ts">
+import svg from '~/assets/images/logo.svg?url'
+
+useHead({
+    link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/svg+xml', href: svg },
+    ]
+})
 </script>
 
 <template>
