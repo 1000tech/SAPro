@@ -19,12 +19,11 @@ This is a multilingual website built with Nuxt 3, featuring Decap CMS integratio
 ## Project Structure
 
 ```
-app/                    # Main Nuxt 3 application
-├── app.vue            # Main application component
-├── components/        # Application components
-├── composables/       # Vue composables
-├── layouts/           # Page layouts
-└── pages/             # Pages ([...slug].vue, index.vue)
+app.vue            # Main application component
+components/        # Application components
+composables/       # Vue composables
+layouts/           # Page layouts
+pages/             # Pages ([...slug].vue, index.vue)
 
 content/               # Markdown content with i18n
 ├── de/               # German content (default)
