@@ -7,6 +7,9 @@ const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
 const colorMode = useColorMode()
 const isDark = computed(() => colorMode.value === 'dark')
+const { locale } = useI18n()
+const locales = ['de', 'en', 'ru'] as const
+const route = useRoute()
 function toggleColorMode(): void {
     colorMode.preference = isDark.value ? 'light' : 'dark'
 }
@@ -33,7 +36,7 @@ function closeMenu(): void {
             <Icon :name="isOpen ? 'lucide:x' : 'lucide:menu'" class="block w-5 h-5" />
         </button>
 
-        <aside class="sidebar" :class="{ open: isOpen }">
+        <aside class="sidebar" :class="{ open: isOpen }" @click="isOpen && closeMenu()">
             <header class="logo">
                 <!-- internal close button so user can close when sidebar is above the external burger -->
                 <button
@@ -48,6 +51,7 @@ function closeMenu(): void {
                 <NuxtLink
                     :to="localePath('/')"
                     class="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                    @click="closeMenu"
                 >
                     <img
                         :src="logo"
@@ -71,6 +75,7 @@ function closeMenu(): void {
                         :key="i"
                         :to="localePath(item.path)"
                         class="menu-link"
+                        :class="route.path === localePath(item.path) ? 'bg-blue-500/30 pointer-events-none' : ''"
                         @click="closeMenu"
                     >
                         <Icon :name="item.icon ?? 'lucide:chevron-right'" class="inline-block w-4 h-4 mr-3" />
@@ -106,25 +111,31 @@ function closeMenu(): void {
                 </p>
             </footer>
 
-            <div class="flex gap-4 items-center">
-                <NuxtLink :to="switchLocalePath('de')" class="ml-auto">DE</NuxtLink>
-                <NuxtLink :to="switchLocalePath('en')">EN</NuxtLink>
-                <NuxtLink :to="switchLocalePath('ru')">RU</NuxtLink>
+            <div class="footer-controls flex items-center gap-1">
+                <NuxtLink
+                    v-for="(loc, index) in locales"
+                    :key="loc"
+                    :to="switchLocalePath(loc)"
+                    :class="['rounded-md p-2 hover:bg-gray-700', {
+                        'bg-gray-700': locale === loc,
+                        'ml-auto': index === 0
+                    }]"
+                    @click="closeMenu"
+                >
+                    {{ loc.toUpperCase() }}
+                </NuxtLink>
                 <ClientOnly>
                     <button
-                        class="flex items-center gap-2 rounded-md px-3 py-1 hover:bg-gray-100 dark:hover:bg-gray-800"
+                        class="flex items-center rounded-md p-3 hover:bg-gray-700"
                         type="button"
-                        :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
-                        @click="toggleColorMode"
+                        @click="closeMenu; toggleColorMode()"
                     >
                         <Icon v-if="isDark" name="lucide:moon" />
                         <Icon v-else name="lucide:sun" />
-                        <span class="hidden sm:inline">{{ isDark ? 'Dark' : 'Light' }}</span>
                     </button>
                     <template #fallback>
-                        <span class="flex items-center gap-2 rounded-md px-3 py-1 opacity-60 select-none">
+                        <span class="flex items-center gap-2 rounded-md p-2 opacity-60 select-none">
                             <Icon name="lucide:sun" />
-                            <span class="hidden sm:inline">Theme</span>
                         </span>
                     </template>
                 </ClientOnly>
@@ -148,6 +159,8 @@ function closeMenu(): void {
     height 100vh
     overflow-y auto
     z-index 1000
+    display flex
+    flex-direction column
 
     h3
         display flex
@@ -179,10 +192,15 @@ function closeMenu(): void {
         max-width 300px
         transform none
 
+.footer-controls
+    margin-top auto
+    border-top 2px solid rgba(255,255,255,0.12)
+    padding-top 1rem
+
 .logo
     display flex
     align-items center
-    margin-bottom 2rem
+    margin-bottom 1.1rem
     padding-bottom 1.5rem
     border-bottom 2px solid rgba(255,255,255,0.2)
 
@@ -236,7 +254,6 @@ function closeMenu(): void {
     margin 1.75rem 0
     padding 1rem 0 1.5rem
     border-top 2px solid rgba(255,255,255,0.12)
-    border-bottom 2px solid rgba(255,255,255,0.12)
 
     p
         font-size 0.85rem
