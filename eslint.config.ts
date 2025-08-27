@@ -102,8 +102,10 @@ export default withNuxt(
             radix: 'error',
 
             // Vue handling
+            'vue/no-mutating-props': 0,
+            'vue/no-unused-components': 0,
             'vue/no-multiple-template-root': 'off',
-            'vue/multi-word-component-names': 'off',
+            'vue/multi-word-component-names': 0,
             'vue/html-indent': ['error', tabIndent, {
                 attribute: 1,
                 baseIndent: 1,

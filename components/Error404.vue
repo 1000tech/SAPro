@@ -52,14 +52,6 @@ if (import.meta.server) {
                 >
                     {{ siteTexts?.error_404_button || 'Go to Homepage' }}
                 </NuxtLink>
-
-                <!-- Go Back Button -->
-                <button
-                    class="inline-block w-full px-6 py-3 text-gray-500 dark:text-gray-400 font-medium hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
-                    @click="$router.go(-1)"
-                >
-                    ← Go Back
-                </button>
             </div>
         </div>
     </div>

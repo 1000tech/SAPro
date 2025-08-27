@@ -26,11 +26,11 @@ function closeMenu(): void {
         <!-- burger button (mobile only) -->
         <button
             type="button"
-            class="burger-btn md:hidden fixed top-4 right-4 z-[900] bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-2 rounded-md shadow transition-colors"
+            class="burger-btn md:hidden fixed top-3 right-3 z-[900] bg-gray-800 text-gray-100 p-2 rounded-md shadow transition-colors"
             :aria-label="isOpen ? 'Close menu' : 'Open menu'"
             @click="toggleMenu"
         >
-            <Icon :name="isOpen ? 'lucide:x' : 'lucide:menu'" class="w-5 h-5" />
+            <Icon :name="isOpen ? 'lucide:x' : 'lucide:menu'" class="block w-5 h-5" />
         </button>
 
         <aside class="sidebar" :class="{ open: isOpen }">
@@ -49,8 +49,14 @@ function closeMenu(): void {
                     :to="localePath('/')"
                     class="flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
-                    <img :src="logo" alt="SAPro Logo" class="w-8 h-8" />
-                    <h2>{{ 'SAPro-HM' }}</h2>
+                    <img
+                        :src="logo"
+                        alt="SAPro Logo"
+                        class="w-8 h-8"
+                    >
+                    <h2>
+                        {{ 'SAPro-HM' }}
+                    </h2>
                 </NuxtLink>
             </header>
 
@@ -168,14 +174,10 @@ function closeMenu(): void {
         &:hover
             background rgba(255,255,255,0.5)
 
-    @media (min-width: $screen-md)
-        width 280px
-        max-width 280px
-        transform none
-
-    @media (min-width: $screen-lg)
+    @media (min-width $screen-md)
         width 300px
         max-width 300px
+        transform none
 
 .logo
     display flex
@@ -245,6 +247,7 @@ function closeMenu(): void {
 
     .iconify
         color $blue
+
 .tech-indicator
     display inline-block
     width 8px
@@ -263,7 +266,7 @@ function closeMenu(): void {
     &.open
         transform translateX(0)
 
-@media (min-width: $screen-md)
+@media (min-width $screen-md)
     .menu-wrapper .burger-btn
         display none
 </style>

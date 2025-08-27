@@ -51,7 +51,7 @@ cta_buttons:
   - label: Запросить предложение
     href: /angebot-anfordern
     variant: primary
-  - label: Импрессум
+  - label: Правовая информация
     href: /impressum
     variant: outline
 ---
