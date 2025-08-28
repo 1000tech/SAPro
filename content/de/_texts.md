@@ -12,4 +12,13 @@ contact_submit: Senden
 contact_sending: Wird gesendet…
 contact_success: Nachricht erfolgreich gesendet!
 contact_error: Fehler
+cta_title: "🚀 Jetzt Angebot anfordern"
+cta_text: Hausmeisterservice in München und Umgebung – schnell, zuverlässig, fair.
+cta_buttons:
+  - label: Angebot anfordern
+    href: /contact
+    variant: primary
+  - label: Impressum
+    href: /impressum
+    variant: outline
 ---

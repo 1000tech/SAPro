@@ -14,9 +14,6 @@ interface HomePage {
     services?: Service[]
     why_title?: string
     features?: Feature[]
-    cta_title?: string
-    cta_text?: string
-    cta_buttons?: CtaButton[]
 }
 
 const { page: rawPage } = await usePageContent()
@@ -118,36 +115,7 @@ useSeoMeta({
         </div>
     </section>
 
-    <section class="py-8 px-4 md:py-10 md:px-10 bg-gradient-to-br from-[#3790d8] to-[#2c7bc4] text-center text-white">
-        <div class="cta-content">
-            <h2 class="mb-4 font-bold">
-                {{ page?.cta_title }}
-            </h2>
-            <p class="mb-8 opacity-90">
-                {{ page?.cta_text }}
-            </p>
-            <div class="cta-buttons flex gap-4 justify-center flex-wrap flex-col md:flex-row items-center md:items-stretch">
-                <template v-for="(b, idx) in (page?.cta_buttons || [])" :key="idx">
-                    <NuxtLink
-                        v-if="b?.href && b.href.startsWith('/')"
-                        :to="'/contact'"
-                        :class="b.variant === 'outline' ? 'btn-outline' : 'btn-primary'"
-                    >
-                        {{ b.label }}
-                    </NuxtLink>
-                    <a
-                        v-else
-                        :href="b?.href"
-                        target="_blank"
-                        rel="noopener"
-                        :class="b?.variant === 'outline' ? 'btn-outline' : 'btn-primary'"
-                    >
-                        {{ b.label }}
-                    </a>
-                </template>
-            </div>
-        </div>
-    </section>
+    <CtaSection />
 </template>
 
 <style lang="stylus">
@@ -321,27 +289,4 @@ useSeoMeta({
 
     p
         color #666
-
-.cta-content
-    h2
-        font-size 2rem
-
-        @media (min-width $screen-lg)
-            font-size 2.2rem
-
-    p
-        font-size 1.2rem
-
-.cta-buttons
-    .btn-primary
-        &:hover
-            background-color #f5dbb8
-
-    .btn-outline
-        border-color white
-        color white
-
-        &:hover
-            background-color white
-            color #3790d8
 </style>

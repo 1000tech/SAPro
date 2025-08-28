@@ -45,15 +45,6 @@ features:
   - icon: fa-solid:shield-alt
     title: Insured & clean
     text: Care, protection of your property and broom-clean handover
-cta_title: "🚀 Request a quote now"
-cta_text: Facility service in Munich and surrounding areas – fast, reliable, fair.
-cta_buttons:
-  - label: Request a quote
-    href: /angebot-anfordern
-    variant: primary
-  - label: Imprint
-    href: /impressum
-    variant: outline
 ---
 
 Your facility service for Munich and surrounding areas. Fast and reliable – we take care of your home and garden.

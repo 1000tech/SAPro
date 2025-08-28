@@ -15,6 +15,9 @@ export type SiteTexts = {
     contact_sending: string
     contact_success: string
     contact_error: string
+    cta_title: string
+    cta_text: string
+    cta_buttons: Array<{ label: string; href?: string; variant?: string }>
 }
 
 export const useSiteTexts = (): AsyncData<SiteTexts | null, NuxtError<unknown> | null> => {
@@ -37,6 +40,9 @@ export const useSiteTexts = (): AsyncData<SiteTexts | null, NuxtError<unknown> |
                 contact_sending = '',
                 contact_success = '',
                 contact_error = '',
+                cta_title = '',
+                cta_text = '',
+                cta_buttons = [],
             } = (doc ?? {}) as Partial<SiteTexts>
             return {
                 error_404_title,
@@ -52,6 +58,9 @@ export const useSiteTexts = (): AsyncData<SiteTexts | null, NuxtError<unknown> |
                 contact_sending,
                 contact_success,
                 contact_error,
+                cta_title,
+                cta_text,
+                cta_buttons,
             }
         },
         { watch: [locale] },

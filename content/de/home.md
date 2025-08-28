@@ -45,15 +45,6 @@ features:
   - icon: fa-solid:shield-alt
     title: Versichert & sauber
     text: Sorgfalt, Schutz Ihrer Immobilie und besenreine Übergabe
-cta_title: "🚀 Jetzt Angebot anfordern"
-cta_text: Hausmeisterservice in München und Umgebung – schnell, zuverlässig, fair.
-cta_buttons:
-  - label: Angebot anfordern
-    href: /angebot-anfordern
-    variant: primary
-  - label: Impressum
-    href: /impressum
-    variant: outline
 ---
 
 Ihr Hausmeisterservice für München und Umgebung. Zuverlässig, schnell und fair – wir kümmern uns um Haus und Garten.

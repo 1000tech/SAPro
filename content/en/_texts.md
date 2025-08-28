@@ -12,4 +12,13 @@ contact_submit: Send
 contact_sending: Sending…
 contact_success: Message sent successfully!
 contact_error: Error
+cta_title: "🚀 Request a quote now"
+cta_text: Facility service in Munich and surrounding areas – fast, reliable, fair.
+cta_buttons:
+  - label: Request a quote
+    href: /contact
+    variant: primary
+  - label: Imprint
+    href: /impressum
+    variant: outline
 ---

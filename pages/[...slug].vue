@@ -21,22 +21,27 @@ useSeoMeta({
 
 <template>
     <template v-if="page">
-        <div class="flex flex-col gap-8">
-            <header class="inner-hero border border-[#3790d8] rounded-b-xl py-10 px-4 md:p-10">
-                <div class="inner-hero__content flex flex-col gap-4 max-w-[600px]">
-                    <h1 class="text-2xl md:text-2.25xl font-extrabold text-[#2c7bc4]">
-                        {{ page.title || slug }}
-                    </h1>
-                    <p v-if="page.hero_subtitle" class="inner-hero__subtitle text-[#555] dark:text-gray-300 text-base opacity-90">
-                        {{ page.hero_subtitle }}
-                    </p>
-                </div>
-            </header>
+        <div class="flex flex-col gap-6 min-h-screen">
+            <div class="flex flex-col gap-6 flex-1">
+                <header class="inner-hero border border-[#3790d8] rounded-b-xl py-10 px-4 md:p-10">
+                    <div class="inner-hero__content flex flex-col gap-4 max-w-[600px]">
+                        <h1 class="text-2xl md:text-2.25xl font-extrabold text-[#2c7bc4]">
+                            {{ page.title || slug }}
+                        </h1>
+                        <p v-if="page.hero_subtitle" class="inner-hero__subtitle text-[#555] dark:text-gray-300 text-base opacity-90">
+                            {{ page.hero_subtitle }}
+                        </p>
+                    </div>
+                </header>
 
-            <!-- Rich text content from Markdown -->
-            <section class="prose-content max-w-[900px] leading-8 text-[#333] dark:text-[#e5e7eb] px-4 md:px-10">
-                <ContentRenderer :value="page" />
-            </section>
+                <!-- Rich text content from Markdown -->
+                <section class="prose-content max-w-[900px] leading-8 text-[#333] dark:text-[#e5e7eb] px-4 md:px-10">
+                    <ContentRenderer :value="page" />
+                </section>
+            </div>
+
+            <!-- CTA Section -->
+            <CtaSection />
         </div>
     </template>
     <template v-else>
