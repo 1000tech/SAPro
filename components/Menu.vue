@@ -138,7 +138,7 @@ function closeMenu(): void {
     width 100%
     max-width 100%
     transform translateX(-100%)
-    transition transform 0.3s ease
+    transition transform $time ease
     background linear-gradient(145deg, #000, #1a1a2e)
     color white
     padding 2rem 1.5rem

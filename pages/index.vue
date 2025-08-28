@@ -31,8 +31,8 @@ const scrollToServices = () => {
 }
 
 // SEO Meta
-const seoTitle = computed(() => `${page.value?.title || 'Home'}`)
-const seoDescription = computed(() => page.value?.hero_subtitle || 'Welcome to our homepage')
+const seoTitle = computed(() => `${page.value?.title}`)
+const seoDescription = computed(() => page.value?.hero_subtitle)
 useSeoMeta({
     title: seoTitle,
     ogTitle: seoTitle,
@@ -56,12 +56,13 @@ useSeoMeta({
                 <ContentRenderer v-if="page" :value="page" />
             </div>
             <div class="flex gap-4 flex-wrap flex-col md:flex-row items-center md:items-stretch justify-center lg:justify-start lg:pb-10">
-                <button
+                <NuxtLink
                     v-if="page?.hero_buttons?.primary_label"
+                    :to="localePath('/contact')"
                     class="btn-primary uppercase"
                 >
                     {{ page.hero_buttons.primary_label }}
-                </button>
+                </NuxtLink>
                 <button
                     v-if="page?.hero_buttons?.secondary_label"
                     class="btn-secondary uppercase dark:text-white"
@@ -107,7 +108,7 @@ useSeoMeta({
             {{ page?.why_title }}
         </h2>
         <div class="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1000px] mx-auto">
-            <div v-for="(f, idx) in (page?.features || [])" :key="idx" class="feature text-center p-4 lg:p-8">
+            <div v-for="(f, idx) in (page?.features || [])" :key="idx" class="feature text-center p-4 lg:p-6">
                 <Icon :name="f.icon ?? ''" />
                 <h4 class="text-base text-[#3790d8] mb-2 font-semibold">
                     {{ f.title }}
@@ -127,11 +128,11 @@ useSeoMeta({
             <p class="mb-8 opacity-90">
                 {{ page?.cta_text }}
             </p>
-            <div class="cta-buttons flex gap-4 justify-center flex-wrap flex-col md:flex-row items-center">
+            <div class="cta-buttons flex gap-4 justify-center flex-wrap flex-col md:flex-row items-center md:items-stretch">
                 <template v-for="(b, idx) in (page?.cta_buttons || [])" :key="idx">
                     <NuxtLink
                         v-if="b?.href && b.href.startsWith('/')"
-                        :to="localePath(b.href)"
+                        :to="'/contact'"
                         :class="b.variant === 'outline' ? 'btn-outline' : 'btn-primary'"
                     >
                         {{ b.label }}
@@ -189,16 +190,17 @@ useSeoMeta({
             font-size 12rem
 
 .btn-primary, .btn-secondary, .btn-outline
+    display flex
+    align-items center
+    justify-content center
     padding 1rem 1.5rem
     border none
     border-radius 8px
     font-size 1rem
     font-weight 600
     cursor pointer
-    transition all 0.3s ease
+    transition all $time ease
     text-decoration none
-    display inline-block
-    text-align center
     width 100%
     max-width 300px
     font-family 'Courier New', monospace

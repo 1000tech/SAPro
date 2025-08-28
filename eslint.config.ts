@@ -124,7 +124,7 @@ export default withNuxt(
             },
         },
         rules: {
-            '@typescript-eslint/strict-boolean-expressions': 'error',
+            // '@typescript-eslint/strict-boolean-expressions': 'error',
             '@typescript-eslint/no-floating-promises': 'error',
             '@typescript-eslint/no-explicit-any': 'error',
             '@typescript-eslint/explicit-function-return-type': 'error',

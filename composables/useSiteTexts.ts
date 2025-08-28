@@ -5,9 +5,19 @@ export type SiteTexts = {
     error_404_title: string
     error_404_description: string
     error_404_button: string
+    contact_title: string
+    contact_subtitle: string
+    contact_name: string
+    contact_email: string
+    contact_phone: string
+    contact_message: string
+    contact_submit: string
+    contact_sending: string
+    contact_success: string
+    contact_error: string
 }
 
-export const useSiteTexts = (): AsyncData<SiteTexts | undefined, NuxtError<unknown> | undefined> => {
+export const useSiteTexts = (): AsyncData<SiteTexts | null, NuxtError<unknown> | null> => {
     const { locale } = useI18n()
     return useAsyncData<SiteTexts>(
         () => `texts-${locale.value}`,
@@ -17,11 +27,31 @@ export const useSiteTexts = (): AsyncData<SiteTexts | undefined, NuxtError<unkno
                 error_404_title = '',
                 error_404_description = '',
                 error_404_button = '',
+                contact_title = '',
+                contact_subtitle = '',
+                contact_name = '',
+                contact_email = '',
+                contact_phone = '',
+                contact_message = '',
+                contact_submit = '',
+                contact_sending = '',
+                contact_success = '',
+                contact_error = '',
             } = (doc ?? {}) as Partial<SiteTexts>
             return {
                 error_404_title,
                 error_404_description,
                 error_404_button,
+                contact_title,
+                contact_subtitle,
+                contact_name,
+                contact_email,
+                contact_phone,
+                contact_message,
+                contact_submit,
+                contact_sending,
+                contact_success,
+                contact_error,
             }
         },
         { watch: [locale] },
