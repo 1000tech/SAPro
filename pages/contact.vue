@@ -8,8 +8,6 @@ useSeoMeta({
     ogTitle: seoTitle,
     description: seoDescription,
     ogDescription: seoDescription,
-    // ogImage: 'https://example.com/image.png',
-    twitterCard: 'summary_large_image',
 })
 
 const form = reactive({

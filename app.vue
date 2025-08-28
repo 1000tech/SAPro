@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import svg from '~/assets/images/logo.svg?url'
+import banner from '~/assets/images/sapro-hm.png?url'
+
+useSeoMeta({
+    ogImage: banner,
+    twitterCard: 'summary_large_image',
+})
 
 useHead({
     link: [
