@@ -9,5 +9,5 @@ contact_title: Контакты
 contact_subtitle: Мы рады вашему сообщению
 contact_icon: lucide:phone
 phone: +49 1577 299 0897
-email: sapro@sapro-hm.com
+email: info@sapro-hm.com
 ---
