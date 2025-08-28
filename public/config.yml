@@ -38,9 +38,9 @@ collections:
         widget: "object"
         collapsed: false
         fields:
-          - { label: "Primär-Button", name: "primary_label", widget: "string", required: false }
-          - { label: "Sekundär-Button", name: "secondary_label", widget: "string", required: false }
-      - { label: "Abschnittstitel – Leistungen", name: "services_title", widget: "string", i18n: true, required: false }
+          - { label: "Prim\u00e4r-Button", name: "primary_label", widget: "string", required: false }
+          - { label: "Sekund\u00e4r-Button", name: "secondary_label", widget: "string", required: false }
+      - { label: "Abschnittstitel \u2013 Leistungen", name: "services_title", widget: "string", i18n: true, required: false }
       - label: "Leistungen"
         name: "services"
         widget: "list"
@@ -50,7 +50,7 @@ collections:
           - { label: "Icon", name: "icon", widget: "string" }
           - { label: "Titel", name: "title", widget: "string" }
           - { label: "Beschreibung", name: "description", widget: "text" }
-      - { label: "Abschnittstitel – Warum wir", name: "why_title", widget: "string", i18n: true, required: false }
+      - { label: "Abschnittstitel \u2013 Warum wir", name: "why_title", widget: "string", i18n: true, required: false }
       - label: "Vorteile"
         name: "features"
         widget: "list"
@@ -81,22 +81,22 @@ collections:
       - { label: "Inhalt", name: "body", widget: "markdown", i18n: true }
 
   - name: "menus"
-    label: "Menü"
-    description: "Hauptmenüeinträge je Sprache bearbeiten"
+    label: "Men\u00fc"
+    description: "Hauptmen\u00fceintr\u00e4ge je Sprache bearbeiten"
     files:
       - label: "Deutsch"
         name: "menu_de"
         file: "content/de/_menu.md"
         fields:
-          - { label: "Abschnittstitel – Leistungen", name: "services_title", widget: "string", required: false }
-          - label: "Menüpunkte"
+          - { label: "Abschnittstitel \u2013 Leistungen", name: "services_title", widget: "string", required: false }
+          - label: "Men\u00fcpunkte"
             name: "items"
             widget: "list"
             collapsed: false
-            summary: "{{fields.label}} → {{fields.path}}"
+            summary: "{{fields.label}} \u2192 {{fields.path}}"
             fields:
               - { label: "Bezeichnung", name: "label", widget: "string" }
-              - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
+              - { label: "Pfad", name: "path", widget: "string", hint: "Der f\u00fchrende / wird automatisch erg\u00e4nzt" }
           - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
           - { label: "Telefon", name: "phone", widget: "string", required: false }
           - { label: "E-Mail", name: "email", widget: "string", required: false }
@@ -104,15 +104,15 @@ collections:
         name: "menu_en"
         file: "content/en/_menu.md"
         fields:
-          - { label: "Abschnittstitel – Leistungen", name: "services_title", widget: "string", required: false }
-          - label: "Menüpunkte"
+          - { label: "Abschnittstitel \u2013 Leistungen", name: "services_title", widget: "string", required: false }
+          - label: "Men\u00fcpunkte"
             name: "items"
             widget: "list"
             collapsed: false
-            summary: "{{fields.label}} → {{fields.path}}"
+            summary: "{{fields.label}} \u2192 {{fields.path}}"
             fields:
               - { label: "Bezeichnung", name: "label", widget: "string" }
-              - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
+              - { label: "Pfad", name: "path", widget: "string", hint: "Der f\u00fchrende / wird automatisch erg\u00e4nzt" }
           - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
           - { label: "Telefon", name: "phone", widget: "string", required: false }
           - { label: "E-Mail", name: "email", widget: "string", required: false }
@@ -120,41 +120,41 @@ collections:
         name: "menu_ru"
         file: "content/ru/_menu.md"
         fields:
-          - { label: "Abschnittstitel – Leistungen", name: "services_title", widget: "string", required: false }
-          - label: "Menüpunkte"
+          - { label: "Abschnittstitel \u2013 Leistungen", name: "services_title", widget: "string", required: false }
+          - label: "Men\u00fcpunkte"
             name: "items"
             widget: "list"
             collapsed: false
-            summary: "{{fields.label}} → {{fields.path}}"
+            summary: "{{fields.label}} \u2192 {{fields.path}}"
             fields:
               - { label: "Bezeichnung", name: "label", widget: "string" }
-              - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
+              - { label: "Pfad", name: "path", widget: "string", hint: "Der f\u00fchrende / wird automatisch erg\u00e4nzt" }
           - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
           - { label: "Telefon", name: "phone", widget: "string", required: false }
           - { label: "E-Mail", name: "email", widget: "string", required: false }
 
   - name: "texts"
     label: "Globale Texte"
-    description: "Kopf- und Fußzeilentexte der Website bearbeiten"
+    description: "Kopf- und Fu\u00dfzeilentexte der Website bearbeiten"
     files:
       - label: "Deutsch"
         name: "texts_de"
         file: "content/de/_texts.md"
         fields:
-          - { label: "404 Titel", name: "error_404_title", widget: "string", hint: "Überschrift, die auf der 404-Fehlerseite angezeigt wird" }
-          - { label: "404 Beschreibung", name: "error_404_description", widget: "string", hint: "Erklärungstext für die 404-Fehlerseite" }
+          - { label: "404 Titel", name: "error_404_title", widget: "string", hint: "\u00dcberschrift, die auf der 404-Fehlerseite angezeigt wird" }
+          - { label: "404 Beschreibung", name: "error_404_description", widget: "string", hint: "Erkl\u00e4rungstext f\u00fcr die 404-Fehlerseite" }
           - { label: "404 Button-Text", name: "error_404_button", widget: "string", hint: "Beschriftung des Buttons auf der 404-Fehlerseite" }
       - label: "Englisch"
         name: "texts_en"
         file: "content/en/_texts.md"
         fields:
-          - { label: "404 Titel", name: "error_404_title", widget: "string", hint: "Überschrift, die auf der 404-Fehlerseite angezeigt wird" }
-          - { label: "404 Beschreibung", name: "error_404_description", widget: "string", hint: "Erklärungstext für die 404-Fehlerseite" }
+          - { label: "404 Titel", name: "error_404_title", widget: "string", hint: "\u00dcberschrift, die auf der 404-Fehlerseite angezeigt wird" }
+          - { label: "404 Beschreibung", name: "error_404_description", widget: "string", hint: "Erkl\u00e4rungstext f\u00fcr die 404-Fehlerseite" }
           - { label: "404 Button-Text", name: "error_404_button", widget: "string", hint: "Beschriftung des Buttons auf der 404-Fehlerseite" }
       - label: "Russisch"
         name: "texts_ru"
         file: "content/ru/_texts.md"
         fields:
-          - { label: "404 Titel", name: "error_404_title", widget: "string", hint: "Überschrift, die auf der 404-Fehlerseite angezeigt wird" }
-          - { label: "404 Beschreibung", name: "error_404_description", widget: "string", hint: "Erklärungstext für die 404-Fehlerseite" }
+          - { label: "404 Titel", name: "error_404_title", widget: "string", hint: "\u00dcberschrift, die auf der 404-Fehlerseite angezeigt wird" }
+          - { label: "404 Beschreibung", name: "error_404_description", widget: "string", hint: "Erkl\u00e4rungstext f\u00fcr die 404-Fehlerseite" }
           - { label: "404 Button-Text", name: "error_404_button", widget: "string", hint: "Beschriftung des Buttons auf der 404-Fehlerseite" }
