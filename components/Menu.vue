@@ -69,7 +69,7 @@ function closeMenu(): void {
                     <Icon :name="menu?.services_icon ?? 'lucide:layers'" class="inline-block w-5 h-5 mr-1" />
                     {{ menu?.services_title }}
                 </h3>
-                <div>
+                <div class="flex flex-col gap-2">
                     <NuxtLink
                         v-for="(item, i) in menu?.items || []"
                         :key="i"
@@ -78,7 +78,10 @@ function closeMenu(): void {
                         :class="route.path === localePath(item.path) ? 'bg-blue-500/30 pointer-events-none' : ''"
                         @click="closeMenu"
                     >
-                        <Icon :name="item.icon ?? 'lucide:chevron-right'" class="inline-block w-4 h-4 mr-3" />
+                        <Icon
+                            :name="item.icon ?? 'lucide:chevron-right'"
+                            class="inline-block w-4 h-4 mr-3 shrink-0"
+                        />
                         {{ item.label }}
                     </NuxtLink>
                 </div>
@@ -230,7 +233,7 @@ function closeMenu(): void {
         gap 0.6rem
         color white
         text-decoration none
-        padding 0.5rem 0.75rem
+        padding 0.7rem 0.75rem
         border-radius 8px
         transition all 0.18s ease
         font-size 0.95rem
