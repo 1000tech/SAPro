@@ -1,7 +1,7 @@
 backend:
     name: github
     repo: 1000tech/SAPro
-    branch: dev
+    branch: main
     base_url: /api/oauth
     auth_endpoint: auth
 
