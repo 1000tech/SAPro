@@ -1,4 +1,4 @@
-import { createError, sendRedirect, setCookie, getRequestURL } from 'h3'
+import { createError, setCookie, getRequestURL, setResponseHeader } from 'h3'
 
 function randomState(length = 32): string {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
 
     const state = randomState()
     // Set httpOnly cookie to validate the callback
-    setCookie(event, 'gh_oauth_state', state, { httpOnly: true, sameSite: 'lax', path: '/' })
+    setCookie(event, 'gh_oauth_state', state, { httpOnly: false, sameSite: 'lax', path: '/', secure: false })
 
     const redirectUri = `${redirectBase}/api/oauth/callback`
     const url = new URL('https://github.com/login/oauth/authorize')

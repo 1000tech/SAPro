@@ -6,7 +6,6 @@ backend:
     auth_endpoint: auth
 
 locale: 'de'
-local_backend: false
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
@@ -19,20 +18,16 @@ i18n:
 collections:
   - name: "home"
     label: "Startseite"
-    description: "Inhalte der Startseite je Sprache"
-    folder: "content"
-    media_folder: "/public/uploads"
-    public_folder: "/uploads"
-    path: "{{locale}}/home"
+    folder: "content/de"
+    path: "home"
     create: false
-    i18n: true
     filter:
       field: "type"
       value: "home"
     fields:
       - { label: "Typ", name: "type", widget: "hidden", default: "home" }
-      - { label: "Titel", name: "title", widget: "string", i18n: true }
-      - { label: "Untertitel (Hero)", name: "hero_subtitle", widget: "string", i18n: true, required: false }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Untertitel (Hero)", name: "hero_subtitle", widget: "string", required: false }
       - label: "Buttons (Hero)"
         name: "hero_buttons"
         widget: "object"
@@ -40,22 +35,20 @@ collections:
         fields:
           - { label: "Primär-Button", name: "primary_label", widget: "string", required: false }
           - { label: "Sekundär-Button", name: "secondary_label", widget: "string", required: false }
-      - { label: "Abschnittstitel – Leistungen", name: "services_title", widget: "string", i18n: true, required: false }
+      - { label: "Abschnittstitel – Leistungen", name: "services_title", widget: "string", required: false }
       - label: "Leistungen"
         name: "services"
         widget: "list"
         collapsed: false
-        i18n: true
         fields:
           - { label: "Icon", name: "icon", widget: "string" }
           - { label: "Titel", name: "title", widget: "string" }
           - { label: "Beschreibung", name: "description", widget: "text" }
-      - { label: "Abschnittstitel – Warum wir", name: "why_title", widget: "string", i18n: true, required: false }
+      - { label: "Abschnittstitel – Warum wir", name: "why_title", widget: "string", required: false }
       - label: "Vorteile"
         name: "features"
         widget: "list"
         collapsed: false
-        i18n: true
         fields:
           - { label: "Icon", name: "icon", widget: "string" }
           - { label: "Titel", name: "title", widget: "string" }
@@ -63,22 +56,17 @@ collections:
 
   - name: "pages"
     label: "Seiten"
-    label_singular: "Seite"
-    description: "Website-Seiten erstellen und bearbeiten"
-    folder: "content"
-    media_folder: "/public/uploads"
-    public_folder: "/uploads"
-    path: "{{locale}}/{{slug}}"
+    folder: "content/de"
+    path: "{{slug}}"
     create: true
     slug: "{{slug}}"
-    i18n: true
     filter:
       field: "type"
       value: "page"
     fields:
       - { label: "Typ", name: "type", widget: "hidden", default: "page" }
-      - { label: "Titel", name: "title", widget: "string", i18n: true }
-      - { label: "Inhalt", name: "body", widget: "markdown", i18n: true }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
 
   - name: "menus"
     label: "Menü"

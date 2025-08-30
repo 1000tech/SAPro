@@ -76,7 +76,7 @@ export default defineEventHandler(async (event) => {
             <body>
                 <script>
                     (function(){
-                        var msg = 'authorization:github:success:${accessToken}';
+                        var msg = \`authorization:github:success:${accessToken}\`;
                         if (window.opener) { window.opener.postMessage(msg, '*'); }
                         window.close();
                     })();
@@ -97,7 +97,7 @@ export default defineEventHandler(async (event) => {
             <body>
                 <script>
                     (function(){
-                        var msg = 'authorization:github:error:${message}';
+                        var msg = \`authorization:github:error:${message}\`;
                         if (window.opener) { window.opener.postMessage(msg, '*'); }
                         window.close();
                     })();

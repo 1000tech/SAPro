@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from 'nuxt/config'
+import { resolve } from 'path'
 
 export default defineNuxtConfig({
     modules: [
@@ -72,5 +73,27 @@ export default defineNuxtConfig({
                 },
             },
         },
+    },
+    content: {
+        // Configure @nuxt/content
+        sources: {
+            content: {
+                driver: 'fs',
+                base: resolve(__dirname, 'content'),
+                prefix: ''
+            }
+        },
+        // Enable markdown parsing
+        markdown: {
+            toc: {
+                depth: 3,
+                searchDepth: 3
+            }
+        },
+        // Enable syntax highlighting
+        highlight: {
+            theme: 'github-dark',
+            preload: ['javascript', 'typescript', 'vue', 'css', 'json', 'bash']
+        }
     },
 })
