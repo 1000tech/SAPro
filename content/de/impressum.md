@@ -5,21 +5,21 @@ hero_subtitle: Rechtliche Informationen und Haftungsausschluss
 ---
 ## IMPRESSUM
 
-**SAP-Hausmeisterservice**\
+[](mailto:info@sapro-hm.com)**SAP-Hausmeisterservice**\
 Alexander Schleicher\
 Staudinger Str. 57\
 81735 München\
-[+49 1577 299 0897](<tel:+49 1577 299 0897>)\
-[info@sapro-hm.com](mailto:info@sapro-hm.com)
+[+49 1609 581 0472](<tel: +4916095810472>)\
+[](mailto:info@sapro-hm.com)[](mailto:info@sapro-hm.com)[](mailto:info@sapro-hm.com)[info@sapro-hm.com](mailto:info@sapro-hm.com)
 
 **Inhaltlich Verantwortlicher gemäß § 6 MDStV**\
 Alexander Schleicher
 
-### Bildnachweis:
+**Steuernummer**\
+148/113/00285
 
-pixabay
-
-Die Europäische Kommission stellt eine Plattform für die außergerichtliche Online-Streitbeilegung (OS-Plattform) bereit, aufrufbar unter <https://ec.europa.eu/odr>.
+**Registergericht**\
+Landeshauptstadt München
 
 ## Haftungsausschluss
 

@@ -29,6 +29,6 @@ items:
 contact_title: Контакты
 contact_subtitle: Мы рады вашему сообщению
 contact_icon: heroicons-solid:phone
-phone: +49 1577 299 0897
+phone: +49 1609 581 0472
 email: info@sapro-hm.com
 ---

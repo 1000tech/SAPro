@@ -9,17 +9,17 @@ hero_subtitle: Legal Information and Disclaimer
 Alexander Schleicher\
 Staudinger Str. 57\
 81735 München\
-[+49 1577 299 0897](<tel:+49 1577 299 0897>)\
+[+49 1609 581 0472](<tel:+49 1609 581 0472>)\
 [info@sapro-hm.com](mailto:info@sapro-hm.com)
 
 **Content Responsible according to § 6 MDStV**\
 Alexander Schleicher
 
-### Image Credits:
+**Tax number**\
+148/113/00285
 
-pixabay
-
-The European Commission provides a platform for out-of-court online dispute resolution (OS platform), accessible at <https://ec.europa.eu/odr>.
+**Registry Court**\
+Landeshauptstadt München
 
 ## Disclaimer
 

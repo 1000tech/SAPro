@@ -29,6 +29,6 @@ items:
 contact_title: Contact
 contact_subtitle: We look forward to your message
 contact_icon: heroicons-solid:phone
-phone: +49 1577 299 0897
+phone: +49 1609 581 0472
 email: info@sapro-hm.com
 ---

@@ -9,11 +9,14 @@ hero_subtitle: Юридическая информация и отказ от о
 Alexander Schleicher\
 Staudinger Str. 57\
 81735 München\
-[+49 1577 299 0897](<tel:+49 1577 299 0897>)\
+[+49 1609 581 0472](<tel:+49 1609 581 0472>)\
 [info@sapro-hm.com](mailto:info@sapro-hm.com)
 
 **Ответственный за содержание согласно § 6 MDStV**\
 Alexander Schleicher
+
+**Налоговый номер**\
+148/113/00285
 
 ### Указание изображений:
 
