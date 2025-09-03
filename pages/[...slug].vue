@@ -78,7 +78,13 @@ useSeoMeta({
         margin-top 1.5rem
         margin-bottom .75rem
         font-weight 700
+
+    h2
+        font-size 1.7rem
+
+    h3
         font-size 1.4rem
+
     p
         margin 0 0 1rem
 </style>
