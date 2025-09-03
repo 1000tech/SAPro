@@ -3,14 +3,7 @@ type: page
 title: Impressum
 hero_subtitle: Rechtliche Informationen und Haftungsausschluss
 ---
-## IMPRESSUM
-
-[](mailto:info@sapro-hm.com)**SAP-Hausmeisterservice**\
-Alexander Schleicher\
-Staudinger Str. 57\
-81735 München\
-[+49 1609 581 0472](<tel: +4916095810472>)\
-[](mailto:info@sapro-hm.com)[](mailto:info@sapro-hm.com)[](mailto:info@sapro-hm.com)[info@sapro-hm.com](mailto:info@sapro-hm.com)
+## IMPRESSUM[](mailto:info@sapro-hm.com)
 
 **Inhaltlich Verantwortlicher gemäß § 6 MDStV**\
 Alexander Schleicher
@@ -21,24 +14,57 @@ Alexander Schleicher
 **Registergericht**\
 Landeshauptstadt München
 
-## Haftungsausschluss
+## Allgemeine Geschäftsbedingungen (AGB)
 
-### 1. Inhalt des Onlineangebotes
+[](<>)**SAP-Hausmeisterservice**\
+Alexander Schleicher\
+Staudinger Str. 57\
+81735 München\
+[+49 1609 581 0472](<>)[](<>)[](<>)[](<>)[info@sapro-hm.com](<>)
 
-Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt. Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.
+### §1 Geltungsbereich
 
-### 2. Verweise und Links
+Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Verträge zwischen SAP-Hausmeisterservice (nachfolgend „Dienstleister“) und seinen Kunden (nachfolgend „Auftraggeber“) im Rahmen der angebotenen Hausmeister- und Gebäudedienstleistungen. Abweichende Vereinbarungen in Einzelverträgen haben Vorrang vor diesen AGB.
 
-Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+### §2 Vertragsgegenstand
 
-Bei direkten oder indirekten Verweisen auf fremde Webseiten ("Hyperlinks"), die außerhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern. Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der verlinkten/verknüpften Seiten hat der Autor keinerlei Einfluss. Deshalb distanziert er sich hiermit ausdrücklich von allen Inhalten aller verlinkten /verknüpften Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge in vom Autor eingerichteten Gästebüchern, Diskussionsforen, Linkverzeichnissen, Mailinglisten und in allen anderen Formen von Datenbanken, auf deren Inhalt externe Schreibzugriffe möglich sind. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.
+2.1 Die Parteien schließen einen Dienstleistungsvertrag über die Erbringung von Hausmeistertätigkeiten. Ein Arbeitsverhältnis wird ausdrücklich nicht begründet.
 
-### 3. Urheber- und Kennzeichenrecht
+2.2 Der Dienstleister ist für seine steuerlichen und sozialversicherungsrechtlichen Pflichten selbst verantwortlich und stellt den Auftraggeber insoweit frei.
 
-Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zurückzugreifen. Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der bloßen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind! Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen, ist ohne ausdrückliche Zustimmung des Autors nicht gestattet.
+2.3 Der Dienstleister ist berechtigt, auch für andere Auftraggeber tätig zu sein.
 
-### 4. Rechtswirksamkeit dieses Haftungsausschusses
+### §3 Zustandekommen des Vertrages
 
-Dieser Haftungsausschluss ist als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.
+3.1 Ein Vertrag kommt durch schriftliche oder mündliche Auftragserteilung des Auftraggebers und deren Annahme durch den Dienstleister zustande.
 
-[DATENSCHUTZERKLÄRUNG](https://hausmeisterservice-sbfgroup.de/datenschutzerklaerung/)
+3.2 Der Leistungsumfang ergibt sich aus dem jeweiligen Angebot oder Leistungsverzeichnis.
+
+### §4 Vertragsdauer und Kündigung
+
+4.1 Die Vertragslaufzeit wird individuell vereinbart.
+
+4.2 Eine ordentliche Kündigung ist mit einer Frist von 6 Wochen zum Monatsende möglich.
+
+4.3 Bei vorzeitiger Kündigung vor Leistungsbeginn kann eine pauschale Bearbeitungsgebühr von 15 % der vereinbarten Auftragssumme erhoben werden.
+
+4.4 Eine fristlose Kündigung aus wichtigem Grund bleibt beiden Parteien vorbehalten.
+
+### 
+§5 Leistungsumfang und Pflichten
+
+nd und Rechtswahl
+
+Es gilt ausschließlich deutsches Recht. Gerichtsstand ist München, sofern der Auftraggeber Kaufmann ist oder keinen allgemeinen Gerichtsstand in Deutschland hat.
+
+
+
+§9 Salvatorische Klausel
+
+Sollten einzelne Bestimmungen dieser AGB unwirksam sein, bleibt die Wirksamkeit der übrigen Regelungen unberührt. Die unwirksame Klausel wird durch eine rechtlich zulässige ersetzt, die dem wirtschaftlichen Zweck am nächsten kommt.
+
+
+
+
+
+[](https://hausmeisterservice-sbfgroup.de/datenschutzerklaerung/)
