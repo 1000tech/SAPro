@@ -1,4 +1,5 @@
 ---
+type: page
 title: Flooring
 hero_subtitle: Professional flooring installation
 ---

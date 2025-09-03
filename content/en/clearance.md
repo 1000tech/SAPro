@@ -1,4 +1,5 @@
 ---
+type: page
 title: Clearance
 hero_subtitle: Professional clearance and apartment dissolution
 ---

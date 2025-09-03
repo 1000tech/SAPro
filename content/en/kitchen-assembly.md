@@ -1,4 +1,5 @@
 ---
+type: page
 title: Kitchen Assembly
 hero_subtitle: Professional kitchen assembly for your home
 ---

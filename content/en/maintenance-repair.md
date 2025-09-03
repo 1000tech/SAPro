@@ -1,4 +1,5 @@
 ---
+type: page
 title: Maintenance & Repair
 hero_subtitle: Professional maintenance and repair
 ---

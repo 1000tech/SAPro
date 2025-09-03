@@ -1,4 +1,5 @@
 ---
+type: page
 title: Prefabricated Installation
 hero_subtitle: Professional installation of prefabricated parts
 ---

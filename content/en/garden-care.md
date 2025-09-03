@@ -1,4 +1,5 @@
 ---
+type: page
 title: Garden Care
 hero_subtitle: Professional garden care for your home
 ---

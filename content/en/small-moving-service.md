@@ -1,4 +1,5 @@
 ---
+type: page
 title: Small Moving Service
 hero_subtitle: Professional help with small moves
 ---

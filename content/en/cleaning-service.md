@@ -1,4 +1,5 @@
 ---
+type: page
 title: Cleaning Service
 hero_subtitle: Professional cleaning for your home
 ---

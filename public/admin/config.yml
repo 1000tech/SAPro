@@ -16,8 +16,8 @@ i18n:
     default_locale: de
 
 collections:
-  - name: "home"
-    label: "Startseite"
+  - name: "home_de"
+    label: "Startseite (Deutsch)"
     folder: "content/de"
     path: "home"
     create: false
@@ -54,12 +54,89 @@ collections:
           - { label: "Titel", name: "title", widget: "string" }
           - { label: "Text", name: "text", widget: "text" }
 
-  - name: "pages"
-    label: "Seiten"
+  - name: "home_en"
+    label: "Startseite (Englisch)"
+    folder: "content/en"
+    path: "home"
+    create: false
+    filter:
+      field: "type"
+      value: "home"
+    fields:
+      - { label: "Type", name: "type", widget: "hidden", default: "home" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Hero Subtitle", name: "hero_subtitle", widget: "string", required: false }
+      - label: "Hero Buttons"
+        name: "hero_buttons"
+        widget: "object"
+        collapsed: false
+        fields:
+          - { label: "Primary Button", name: "primary_label", widget: "string", required: false }
+          - { label: "Secondary Button", name: "secondary_label", widget: "string", required: false }
+      - { label: "Services Section Title", name: "services_title", widget: "string", required: false }
+      - label: "Services"
+        name: "services"
+        widget: "list"
+        collapsed: false
+        fields:
+          - { label: "Icon", name: "icon", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+      - { label: "Why Us Section Title", name: "why_title", widget: "string", required: false }
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        collapsed: false
+        fields:
+          - { label: "Icon", name: "icon", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "text", widget: "text" }
+
+  - name: "home_ru"
+    label: "Startseite (Russisch)"
+    folder: "content/ru"
+    path: "home"
+    create: false
+    filter:
+      field: "type"
+      value: "home"
+    fields:
+      - { label: "Тип", name: "type", widget: "hidden", default: "home" }
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Подзаголовок (Hero)", name: "hero_subtitle", widget: "string", required: false }
+      - label: "Кнопки (Hero)"
+        name: "hero_buttons"
+        widget: "object"
+        collapsed: false
+        fields:
+          - { label: "Основная кнопка", name: "primary_label", widget: "string", required: false }
+          - { label: "Дополнительная кнопка", name: "secondary_label", widget: "string", required: false }
+      - { label: "Заголовок раздела – Услуги", name: "services_title", widget: "string", required: false }
+      - label: "Услуги"
+        name: "services"
+        widget: "list"
+        collapsed: false
+        fields:
+          - { label: "Иконка", name: "icon", widget: "string" }
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Описание", name: "description", widget: "text" }
+      - { label: "Заголовок раздела – Почему мы", name: "why_title", widget: "string", required: false }
+      - label: "Преимущества"
+        name: "features"
+        widget: "list"
+        collapsed: false
+        fields:
+          - { label: "Иконка", name: "icon", widget: "string" }
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Текст", name: "text", widget: "text" }
+
+  - name: "pages_de"
+    label: "Seiten (Deutsch)"
     folder: "content/de"
     path: "{{slug}}"
     create: true
     slug: "{{slug}}"
+    extension: "md"
     filter:
       field: "type"
       value: "page"
@@ -67,6 +144,36 @@ collections:
       - { label: "Typ", name: "type", widget: "hidden", default: "page" }
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Inhalt", name: "body", widget: "markdown" }
+
+  - name: "pages_en"
+    label: "Seiten (Englisch)"
+    folder: "content/en"
+    path: "{{slug}}"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    filter:
+      field: "type"
+      value: "page"
+    fields:
+      - { label: "Type", name: "type", widget: "hidden", default: "page" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "pages_ru"
+    label: "Seiten (Russisch)"
+    folder: "content/ru"
+    path: "{{slug}}"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    filter:
+      field: "type"
+      value: "page"
+    fields:
+      - { label: "Тип", name: "type", widget: "hidden", default: "page" }
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Содержимое", name: "body", widget: "markdown" }
 
   - name: "menus"
     label: "Menü"
