@@ -4,9 +4,9 @@ title: Small Moving Service
 hero_subtitle: Professional help with small moves
 ---
 
-We support you with small moves using our experienced team.
+I support you with small moves using my experienced team.
 
-## Our Services
+## My Services
 
 - Furniture transport
 - Packing

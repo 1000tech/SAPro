@@ -4,9 +4,9 @@ title: Einbau von genormten Baufertigteilen
 hero_subtitle: Professionelle Installation von Fertigteilen
 ---
 
-Wir installieren genormte Baufertigteile effizient und sicher.
+Ich installiere genormte Baufertigteile effizient und sicher.
 
-## Unsere Leistungen
+## Meine Leistungen
 
 - Installation von Fertigteilen
 - Anpassungen

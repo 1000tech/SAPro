@@ -1,5 +1,5 @@
 ---
-services_title: Our Services
+services_title: My Services
 services_icon: heroicons-solid:squares-2x2
 items:
   - label: Garden Care
@@ -27,7 +27,7 @@ items:
     path: maintenance-repair
     icon: heroicons-solid:wrench
 contact_title: Contact
-contact_subtitle: We look forward to your message
+contact_subtitle: I look forward to your message
 contact_icon: heroicons-solid:phone
 phone: +49 1609 581 0472
 email: info@sapro-hm.com

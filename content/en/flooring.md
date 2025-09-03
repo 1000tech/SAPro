@@ -4,9 +4,9 @@ title: Flooring
 hero_subtitle: Professional flooring installation
 ---
 
-We lay floors professionally and precisely for your home.
+I lay floors professionally and precisely for your home.
 
-## Our Services
+## My Services
 
 - Flooring installation
 - Material selection

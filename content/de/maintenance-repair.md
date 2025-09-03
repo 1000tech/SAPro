@@ -4,9 +4,9 @@ title: Wartung & Reparatur
 hero_subtitle: Professionelle Wartung und Reparatur
 ---
 
-Wir bieten Wartung und Reparatur für verschiedene Systeme und Geräte.
+Ich biete Wartung und Reparatur für verschiedene Systeme und Geräte.
 
-## Unsere Leistungen
+## Meine Leistungen
 
 - Wartung
 - Reparatur

@@ -1,5 +1,5 @@
 ---
-services_title: Unsere Leistungen
+services_title: Meine Leistungen
 services_icon: heroicons-solid:squares-2x2
 items:
   - label: Gartenpflege
@@ -27,7 +27,7 @@ items:
     path: maintenance-repair
     icon: heroicons-solid:wrench
 contact_title: Kontakt
-contact_subtitle: Wir freuen uns auf Ihre Nachricht
+contact_subtitle: Ich freue mich auf Ihre Nachricht
 contact_icon: heroicons-solid:phone
 phone: +49 1609 581 0472
 email: info@sapro-hm.com

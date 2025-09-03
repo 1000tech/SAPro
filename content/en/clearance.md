@@ -4,9 +4,9 @@ title: Clearance
 hero_subtitle: Professional clearance and apartment dissolution
 ---
 
-We help with clearances and apartment dissolutions discreetly and efficiently.
+I help with clearances and apartment dissolutions discreetly and efficiently.
 
-## Our Services
+## My Services
 
 - Clearance
 - Apartment dissolution

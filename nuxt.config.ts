@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         routeRules: {
             '/api/**': { cache: false },
             '/admin/**': { cache: false },
-            '/**': { swr: 60 }
+            '/**': { swr: 60 },
         },
         // Basic prerender settings: prerender selected pages at build time so their
         // HTML is generated and served immediately from edge while Nitro still hosts /api

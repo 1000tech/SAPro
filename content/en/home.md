@@ -5,7 +5,7 @@ hero_subtitle: "Garden care • Cleaning • Kitchen assembly • Moving • Flo
 hero_buttons:
   primary_label: Request a quote
   secondary_label: View services
-services_title: Our services
+services_title: My services
 services:
   - icon: fa-solid:leaf
     title: Garden care
@@ -31,7 +31,7 @@ services:
   - icon: fa-solid:tools
     title: Maintenance & repair
     description: Upkeep, small repairs in and around the house, quick help with defects.
-why_title: Why choose us?
+why_title: Why choose me?
 features:
   - icon: fa-solid:clock
     title: Fast on site
@@ -47,6 +47,6 @@ features:
     text: Care, protection of your property and broom-clean handover
 ---
 
-Your facility service for Munich and surrounding areas. Fast and reliable – we take care of your home and garden.
+Your facility service for Munich and surrounding areas. Fast and reliable – I take care of your home and garden.
 
 Garden care, cleaning, kitchen assembly, small moves, flooring, installation of standardized building parts, clearing services, as well as maintenance & repair – all from a single source.

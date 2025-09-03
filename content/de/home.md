@@ -5,7 +5,7 @@ hero_subtitle: "Gartenpflege • Reinigung • Küchenmontage • Umzug • Bode
 hero_buttons:
   primary_label: Angebot anfordern
   secondary_label: Leistungen ansehen
-services_title: Unsere Leistungen
+services_title: Meine Leistungen
 services:
   - icon: fa-solid:leaf
     title: Gartenpflege
@@ -31,7 +31,7 @@ services:
   - icon: fa-solid:tools
     title: Wartung & Reparatur
     description: Instandhaltung, kleine Reparaturen im und am Haus, schnelle Hilfe bei Defekten.
-why_title: Warum uns wählen?
+why_title: Warum mich wählen?
 features:
   - icon: fa-solid:clock
     title: Schnell vor Ort
@@ -47,6 +47,6 @@ features:
     text: Sorgfalt, Schutz Ihrer Immobilie und besenreine Übergabe
 ---
 
-Ihr Hausmeisterservice für München und Umgebung. Zuverlässig, schnell und fair – wir kümmern uns um Haus und Garten.
+Ihr Hausmeisterservice für München und Umgebung. Zuverlässig, schnell und fair – ich kümmere mich um Haus und Garten.
 
 Gartenpflege, Reinigungsservice, Küchenmontage, Klein-Umzüge, Bodenlegerarbeiten, Einbau genormter Baufertigteile, Entrümpelungen sowie Wartung & Reparatur – alles aus einer Hand.

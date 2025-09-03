@@ -4,9 +4,9 @@ title: Klein Umzugsservice
 hero_subtitle: Professionelle Hilfe bei kleinen Umzügen
 ---
 
-Wir unterstützen Sie bei kleinen Umzügen mit unserem erfahrenen Team.
+Ich unterstütze Sie bei kleinen Umzügen mit meinem erfahrenen Team.
 
-## Unsere Leistungen
+## Meine Leistungen
 
 - Möbeltransport
 - Verpackung

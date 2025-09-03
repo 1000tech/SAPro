@@ -4,9 +4,9 @@ title: Entrümpelungen und/oder Wohnungsauflösungen
 hero_subtitle: Professionelle Entrümpelung und Wohnungsauflösung
 ---
 
-Wir helfen bei Entrümpelungen und Wohnungsauflösungen diskret und effizient.
+Ich helfe bei Entrümpelungen und Wohnungsauflösungen diskret und effizient.
 
-## Unsere Leistungen
+## Meine Leistungen
 
 - Entrümpelung
 - Wohnungsauflösung

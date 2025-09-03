@@ -1,5 +1,5 @@
 ---
-services_title: Наши услуги
+services_title: Мои услуги
 services_icon: heroicons-solid:squares-2x2
 items:
   - label: Уход за садом
@@ -27,7 +27,7 @@ items:
     path: maintenance-repair
     icon: heroicons-solid:wrench
 contact_title: Контакты
-contact_subtitle: Мы рады вашему сообщению
+contact_subtitle: Я рад вашему сообщению
 contact_icon: heroicons-solid:phone
 phone: +49 1609 581 0472
 email: info@sapro-hm.com
