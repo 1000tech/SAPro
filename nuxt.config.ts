@@ -16,6 +16,9 @@ export default defineNuxtConfig({
     nitro: {
         // Ensure node-fetch polyfills etc are fine on Vercel
         preset: 'vercel',
+        future: {
+            nativeSWR: true,
+        },
         // Route rules help reduce perceived latency by caching SSR responses at the edge
         // - do not cache API routes
         // - enable stale-while-revalidate for frontend pages (adjust seconds as needed)
