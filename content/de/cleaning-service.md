@@ -4,9 +4,9 @@ title: Reinigungsservice
 hero_subtitle: Professionelle Reinigung für Ihr Zuhause
 ---
 
-Ich biete professionelle Reinigungsservices für Wohnungen, Büros und andere Räume.
+Wohnungsreinigung und professionelle Reinigungsservices für Wohnungen, Büros und andere Räume.
 
-## Meine Leistungen
+## Leistungen
 
 - Wohnungsreinigung
 - Büroreinigung

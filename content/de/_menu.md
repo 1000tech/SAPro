@@ -1,5 +1,5 @@
 ---
-services_title: Meine Leistungen
+services_title: Leistungen
 services_icon: heroicons-solid:squares-2x2
 items:
   - label: Gartenpflege
@@ -7,10 +7,10 @@ items:
     icon: heroicons-solid:scissors
   - label: Reinigungsservice
     path: cleaning-service
-    icon: heroicons-solid:sparkles
+    icon: fa-solid:broom
   - label: Küchenmontage
     path: kitchen-assembly
-    icon: fa-solid:utensils
+    icon: fa-solid:tools
   - label: Klein Umzugsservice
     path: small-moving-service
     icon: heroicons-solid:truck
@@ -19,15 +19,15 @@ items:
     icon: heroicons-solid:home
   - label: Einbau von genormten Baufertigteilen
     path: prefabricated-installation
-    icon: heroicons-solid:adjustments-horizontal
+    icon: fa-solid:door-closed
   - label: Entrümpelungen und/oder Wohnungsauflösungen
     path: clearance
-    icon: heroicons-solid:trash
+    icon: heroicons-solid:archive-box-x-mark
   - label: Wartung & Reparatur
     path: maintenance-repair
     icon: heroicons-solid:wrench
 contact_title: Kontakt
-contact_subtitle: Ich freue mich auf Ihre Nachricht
+contact_subtitle: Freuen uns auf Ihre Nachricht
 contact_icon: heroicons-solid:phone
 phone: +49 1609 581 0472
 email: info@sapro-hm.com

@@ -4,9 +4,9 @@ title: Kitchen Assembly
 hero_subtitle: Professional kitchen assembly for your home
 ---
 
-I offer professional kitchen assembly to ensure everything fits perfectly.
+Kitchen assembly, customizations, aftercare.
 
-## My Services
+## Services
 
 - Kitchen assembly
 - Customizations

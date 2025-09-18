@@ -4,9 +4,9 @@ title: Bodenleger
 hero_subtitle: Professionelle Bodenverlegung
 ---
 
-Ich lege Böden professionell und präzise für Ihr Zuhause.
+Bodenverlegung und professionelle Bodenverlegung für Ihr Zuhause.
 
-## Meine Leistungen
+## Leistungen
 
 - Bodenverlegung
 - Materialauswahl

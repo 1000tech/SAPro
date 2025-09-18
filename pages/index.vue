@@ -120,7 +120,7 @@ useSeoMeta({
 
 <style lang="stylus">
 .hero-section
-    background linear-gradient(135deg, rgba(55, 144, 216, 0.1), rgba(254, 234, 207, 0.8))
+    background linear-gradient(135deg, rgba(55, 144, 216, 0.3), rgba(254, 234, 207, 0.8))
 
     &::before
         content ''

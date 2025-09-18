@@ -4,9 +4,9 @@ title: Prefabricated Installation
 hero_subtitle: Professional installation of prefabricated parts
 ---
 
-I install standardized prefabricated parts efficiently and safely.
+Installation of prefabricated parts, adjustments, quality assurance.
 
-## My Services
+## Services
 
 - Installation of prefabricated parts
 - Adjustments

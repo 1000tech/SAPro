@@ -4,10 +4,10 @@ title: Garden Care
 hero_subtitle: Professional garden care for your home
 ---
 
-I offer comprehensive garden care services to keep your garden beautiful and well-maintained.
+Lawn mowing and care, plants and flowers, garden maintenance.
 
-## My Services
+## Services
 
-- Lawn mowing and care
+- Lawn mowing and garden maintenance
 - Plants and flowers
 - Garden maintenance

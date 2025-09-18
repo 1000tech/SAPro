@@ -4,9 +4,9 @@ title: Maintenance & Repair
 hero_subtitle: Professional maintenance and repair
 ---
 
-I offer maintenance and repair for various systems and devices.
+Maintenance, repair, preventive measures.
 
-## My Services
+## Services
 
 - Maintenance
 - Repair

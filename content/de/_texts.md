@@ -3,7 +3,7 @@ error_404_title: Seite nicht gefunden
 error_404_description: Die angeforderte Seite konnte nicht gefunden werden.
 error_404_button: Zur Startseite
 contact_title: Kontaktieren Sie mich
-contact_subtitle: Ich freue mich auf Ihre Nachricht
+contact_subtitle: Freuen uns auf Ihre Nachricht
 contact_name: Name
 contact_email: E-Mail
 contact_phone: Telefon

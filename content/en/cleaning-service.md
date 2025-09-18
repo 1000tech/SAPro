@@ -4,9 +4,9 @@ title: Cleaning Service
 hero_subtitle: Professional cleaning for your home
 ---
 
-I offer professional cleaning services for apartments, offices, and other spaces.
+Apartment cleaning, office cleaning, special cleanings.
 
-## My Services
+## Services
 
 - Apartment cleaning
 - Office cleaning

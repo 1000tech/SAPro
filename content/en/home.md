@@ -5,7 +5,7 @@ hero_subtitle: "Garden care • Cleaning • Kitchen assembly • Moving • Flo
 hero_buttons:
   primary_label: Request a quote
   secondary_label: View services
-services_title: My services
+services_title: Services
 services:
   - icon: fa-solid:leaf
     title: Garden care
@@ -13,7 +13,7 @@ services:
   - icon: fa-solid:broom
     title: Cleaning
     description: Stairwells, offices and households – regular, deep and window cleaning.
-  - icon: fa-solid:utensils
+  - icon: fa-solid:tools
     title: Kitchen assembly
     description: Delivery, assembly and installation of your kitchen including alignment and fine-tuning.
   - icon: fa-solid:truck
@@ -25,7 +25,7 @@ services:
   - icon: fa-solid:door-closed
     title: Installation of standardized elements
     description: Mounting doors, frames, windows, shelves and other standardized elements.
-  - icon: fa-solid:trash-alt
+  - icon: heroicons-solid:archive-box-x-mark
     title: Clearing & disposal
     description: Fast clearing, proper disposal and broom-clean handover.
   - icon: fa-solid:tools
@@ -47,6 +47,6 @@ features:
     text: Care, protection of your property and broom-clean handover
 ---
 
-Your facility service for Munich and surrounding areas. Fast and reliable – I take care of your home and garden.
+Your facility service for Munich and surrounding areas. Fast and reliable – care of your home and garden.
 
 Garden care, cleaning, kitchen assembly, small moves, flooring, installation of standardized building parts, clearing services, as well as maintenance & repair – all from a single source.

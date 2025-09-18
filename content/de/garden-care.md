@@ -4,10 +4,10 @@ title: Gartenpflege
 hero_subtitle: Professionelle Gartenpflege für Ihr Zuhause
 ---
 
-Ich biete umfassende Gartenpflege-Services, um Ihren Garten schön und gepflegt zu halten.
+Rasenmähen und umfassende Gartenpflege-Services, um Ihren Garten schön und gepflegt zu halten.
 
-## Meine Leistungen
+## Leistungen
 
-- Rasenmähen und Pflege
+- Rasenmähen und Gartenpflege
 - Pflanzen und Blumen
 - Gartenwartung

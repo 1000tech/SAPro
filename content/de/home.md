@@ -5,7 +5,7 @@ hero_subtitle: "Gartenpflege • Reinigung • Küchenmontage • Umzug • Bode
 hero_buttons:
   primary_label: Angebot anfordern
   secondary_label: Leistungen ansehen
-services_title: Meine Leistungen
+services_title: Leistungen
 services:
   - icon: fa-solid:leaf
     title: Gartenpflege
@@ -13,7 +13,7 @@ services:
   - icon: fa-solid:broom
     title: Reinigungsservice
     description: Treppenhaus, Büro und Haushalt – gründliche Unterhalts-, Grund- und Fensterreinigung.
-  - icon: fa-solid:utensils
+  - icon: fa-solid:tools
     title: Küchenmontage
     description: Lieferung, Aufbau und Anschluss Ihrer Küche inkl. Ausrichtung und Feineinstellung.
   - icon: fa-solid:truck
@@ -25,13 +25,13 @@ services:
   - icon: fa-solid:door-closed
     title: Einbau genormter Baufertigteile
     description: Montage von Türen, Zargen, Fenstern, Regalen und weiteren standardisierten Elementen.
-  - icon: fa-solid:trash-alt
+  - icon: heroicons-solid:archive-box-x-mark
     title: Entrümpelungen & Wohnungsauflösungen
     description: Schnelle Räumung, fachgerechte Entsorgung und besenreine Übergabe von Objekten.
   - icon: fa-solid:tools
     title: Wartung & Reparatur
     description: Instandhaltung, kleine Reparaturen im und am Haus, schnelle Hilfe bei Defekten.
-why_title: Warum mich wählen?
+why_title: Warum SAPro wählen?
 features:
   - icon: fa-solid:clock
     title: Schnell vor Ort
@@ -47,6 +47,6 @@ features:
     text: Sorgfalt, Schutz Ihrer Immobilie und besenreine Übergabe
 ---
 
-Ihr Hausmeisterservice für München und Umgebung. Zuverlässig, schnell und fair – ich kümmere mich um Haus und Garten.
+Ihr Hausmeisterservice für München und Umgebung. Zuverlässig, schnell und fair – Sorge um Haus und Garten.
 
 Gartenpflege, Reinigungsservice, Küchenmontage, Klein-Umzüge, Bodenlegerarbeiten, Einbau genormter Baufertigteile, Entrümpelungen sowie Wartung & Reparatur – alles aus einer Hand.

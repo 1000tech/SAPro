@@ -4,9 +4,9 @@ title: Small Moving Service
 hero_subtitle: Professional help with small moves
 ---
 
-I support you with small moves using my experienced team.
+Furniture transport, packing, assembly and disassembly.
 
-## My Services
+## Services
 
 - Furniture transport
 - Packing

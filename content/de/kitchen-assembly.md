@@ -4,9 +4,9 @@ title: Küchenmontage
 hero_subtitle: Professionelle Küchenmontage für Ihr Zuhause
 ---
 
-Ich biete professionelle Montage von Küchen, um sicherzustellen, dass alles perfekt passt.
+Küchenmontage, Anpassung/Austausch von Schränken, Renovierung alter Küchen.
 
-## Meine Leistungen
+## Leistungen
 
 - Küchenmontage
 - Anpassungen

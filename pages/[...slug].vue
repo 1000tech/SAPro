@@ -25,7 +25,7 @@ useSeoMeta({
             <div class="flex flex-col gap-6 flex-1">
                 <header class="inner-hero border border-[#3790d8] rounded-b-xl py-10 px-4 md:p-10">
                     <div class="inner-hero__content flex flex-col gap-4 max-w-[600px]">
-                        <h1 class="text-2xl md:text-2.25xl font-extrabold text-[#2c7bc4]">
+                        <h1 class="text-4xl md:text-2.25xl font-extrabold text-[#2c7bc4]">
                             {{ page.title || slug }}
                         </h1>
                         <p v-if="page.hero_subtitle" class="inner-hero__subtitle text-[#555] dark:text-gray-300 text-base opacity-90">
