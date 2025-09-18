@@ -49,6 +49,8 @@ if (import.meta.server) {
                 <NuxtLink
                     :to="localePath('/')"
                     class="inline-block w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+                    prefetch
+                    prefetch-on="interaction"
                 >
                     {{ siteTexts?.error_404_button || 'Go to Homepage' }}
                 </NuxtLink>

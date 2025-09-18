@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { data: siteTexts } = await useSiteTexts()
 const route = useRoute()
+const localePath = useLocalePath()
 </script>
 
 <template>
@@ -15,21 +16,13 @@ const route = useRoute()
             <div class="cta-buttons flex gap-4 justify-center flex-wrap flex-col md:flex-row items-center md:items-stretch">
                 <template v-for="(b, idx) in (siteTexts?.cta_buttons || []).filter(btn => !(btn.href === '/impressum' && route.path.endsWith('/impressum')))" :key="idx">
                     <NuxtLink
-                        v-if="b?.href && b.href.startsWith('/')"
-                        :to="b.href"
+                        :to="localePath(b.href)"
                         :class="b.variant === 'outline' ? 'btn-outline' : 'btn-primary'"
+                        prefetch
+                        prefetch-on="interaction"
                     >
                         {{ b.label }}
                     </NuxtLink>
-                    <a
-                        v-else
-                        :href="b?.href"
-                        target="_blank"
-                        rel="noopener"
-                        :class="b?.variant === 'outline' ? 'btn-outline' : 'btn-primary'"
-                    >
-                        {{ b.label }}
-                    </a>
                 </template>
             </div>
         </div>

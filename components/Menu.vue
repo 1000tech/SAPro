@@ -51,6 +51,8 @@ function closeMenu(): void {
                 <NuxtLink
                     :to="localePath('/')"
                     class="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                    prefetch
+                    prefetch-on="interaction"
                     @click="closeMenu"
                 >
                     <img
@@ -76,6 +78,8 @@ function closeMenu(): void {
                         :to="localePath(item.path)"
                         class="menu-link"
                         :class="route.path === localePath(item.path) ? 'bg-blue-500/30 pointer-events-none' : ''"
+                        prefetch
+                        prefetch-on="interaction"
                         @click="closeMenu"
                     >
                         <Icon
@@ -123,6 +127,8 @@ function closeMenu(): void {
                         'bg-gray-700': locale === loc,
                         'ml-auto': index === 0
                     }]"
+                    prefetch
+                    prefetch-on="interaction"
                     @click="closeMenu"
                 >
                     {{ loc.toUpperCase() }}

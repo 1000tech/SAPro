@@ -4,7 +4,6 @@ import banner from '~/assets/images/sapro-hm.png?url'
 interface HeroButtons { primary_label?: string; secondary_label?: string }
 interface Service { icon?: string; title?: string; description?: string }
 interface Feature { icon?: string; title?: string; text?: string }
-interface CtaButton { label: string; href?: string; variant?: 'primary' | 'outline' | string }
 interface HomePage {
     type?: string
     title?: string
@@ -55,6 +54,8 @@ useSeoMeta({
                     v-if="page?.hero_buttons?.primary_label"
                     :to="localePath('/contact')"
                     class="btn-primary uppercase"
+                    prefetch
+                    prefetch-on="interaction"
                 >
                     {{ page.hero_buttons.primary_label }}
                 </NuxtLink>
