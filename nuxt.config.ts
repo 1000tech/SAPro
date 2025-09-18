@@ -77,6 +77,11 @@ export default defineNuxtConfig({
     },
     css: ['../assets/styles/layout.styl'],
     vite: {
+        // Disable CSS code-splitting to avoid extra tiny CSS chunks (e.g., usePageContent.*.css)
+        // This consolidates all styles into a single CSS file, reducing critical request chains for LCP
+        build: {
+            cssCodeSplit: false,
+        },
         css: {
             preprocessorOptions: {
                 stylus: {
