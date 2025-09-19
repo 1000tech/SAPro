@@ -1,6 +1,59 @@
 import { defineNuxtConfig } from 'nuxt/config'
-import { resolve } from 'path'
+import { resolve, join, relative, sep } from 'path'
 import { readdirSync } from 'fs'
+
+// Helper: collect localized routes from content/*.md for prerender (with i18n strategy prefix_except_default)
+const locales = ['de', 'en', 'ru'] as const
+const defaultLocale = 'de'
+const contentRoot = resolve(__dirname, 'content')
+
+function walk(dir: string): string[] {
+    const out: string[] = []
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+        const full = join(dir, entry.name)
+        if (entry.isDirectory()) out.push(...walk(full))
+        else if (entry.isFile() && entry.name.endsWith('.md')) out.push(full)
+    }
+    return out
+}
+
+function shouldSkip(fileRelPath: string): boolean {
+    // Skip special content like _menu.md, _texts.md and any path segment starting with underscore
+    const segments = fileRelPath.split('/')
+    const fname = segments[segments.length - 1]
+    if (fname && fname.startsWith('_')) return true
+    return segments.some((s: string) => s.startsWith('_'))
+}
+
+function contentFileToRoute(locale: string, fileAbsPath: string): string | null {
+    const rel = relative(join(contentRoot, locale), fileAbsPath).split(sep).join('/')
+    if (shouldSkip(rel)) return null
+    const withoutExt = rel.replace(/\.md$/i, '')
+    // Map home.md to locale root
+    const pathPart = withoutExt === 'home' ? '' : `/${withoutExt}`
+    return locale === defaultLocale ? `${pathPart || '/'}` : `/${locale}${pathPart}`
+}
+
+function collectPrerenderRoutes(): string[] {
+    const routes = new Set<string>()
+    for (const loc of locales) {
+        const base = join(contentRoot, loc)
+        try {
+            const files = walk(base)
+            for (const f of files) {
+                const r = contentFileToRoute(loc, f)
+                if (r) routes.add(r)
+            }
+        } catch {
+            // ignore missing locale folder
+        }
+    }
+    // Also include non-content pages like contact per locale
+    for (const loc of locales) {
+        routes.add(loc === defaultLocale ? '/contact' : `/${loc}/contact`)
+    }
+    return Array.from(routes)
+}
 
 export default defineNuxtConfig({
     modules: [
@@ -25,6 +78,7 @@ export default defineNuxtConfig({
         },
         prerender: {
             crawlLinks: true,
+            routes: collectPrerenderRoutes(),
         },
     },
     runtimeConfig: {
@@ -35,6 +89,7 @@ export default defineNuxtConfig({
             locales: ['de', 'en', 'ru'],
         },
     },
+    // @ts-expect-error: Module options are provided by @nuxtjs/i18n via module augmentation
     i18n: {
         locales: [
             { code: 'de', iso: 'de-DE' },
