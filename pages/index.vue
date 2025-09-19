@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import banner from '~/assets/images/sapro-hm.png?url'
+import bannerPng from '~/assets/images/sapro-hm.png?url'
+import bannerAvif from '~/assets/images/sapro-hm.avif?url'
 
 interface HeroButtons { primary_label?: string; secondary_label?: string }
 interface Service { icon?: string; title?: string; description?: string }
@@ -69,12 +70,16 @@ useSeoMeta({
             </div>
         </div>
         <div class="hero-image flex-1 flex justify-center items-center mt-auto max-w-[600px]">
-            <!-- <Icon name="fa-solid:home"/> -->
-            <img
-                :src="banner"
-                alt="SAPro banner"
-                class="w-90 h-90"
-            >
+            <picture>
+                <source :srcset="bannerAvif" type="image/avif">
+                <source :srcset="bannerPng" type="image/png">
+                <img
+                    :src="bannerPng"
+                    alt="SAPro banner"
+                    class="w-90 h-90"
+                    fetchpriority="high"
+                >
+            </picture>
         </div>
     </header>
 
