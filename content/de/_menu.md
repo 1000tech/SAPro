@@ -11,7 +11,7 @@ items:
   - label: Küchenmontage
     path: kitchen-assembly
     icon: fa-solid:tools
-  - label: Klein Umzugsservice
+  - label: "Klein Umzugsservice & Entrümpelung "
     path: small-moving-service
     icon: heroicons-solid:truck
   - label: Bodenleger
