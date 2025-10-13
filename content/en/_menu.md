@@ -30,5 +30,5 @@ contact_title: Contact
 contact_subtitle: Look forward to your message
 contact_icon: heroicons-solid:phone
 phone: +49 1609 581 0472
-email: info@sapro-hm.com
+email: SAPro-HM@hotmail.com
 ---
