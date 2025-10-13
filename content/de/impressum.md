@@ -21,7 +21,7 @@ Alexander Schleicher\
 Staudinger Str. 57\
 81735 München\
 [+49 1609 581 0472](tel:+4916095810472)\
-[info@sapro-hm.com](mailto:info@sapro-hm.com)
+[SAPro-HM@hotmail.com](mailto:SAPro-HM@hotmail.com)
 
 ### §1 Geltungsbereich
 

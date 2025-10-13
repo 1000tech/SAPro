@@ -30,5 +30,5 @@ contact_title: Контакты
 contact_subtitle: Будем рады вашему сообщению
 contact_icon: heroicons-solid:phone
 phone: +49 1609 581 0472
-email: info@sapro-hm.com
+email: SAPro-HM@hotmail.com
 ---
