@@ -20,9 +20,6 @@ items:
   - label: Einbau von genormten Baufertigteilen
     path: prefabricated-installation
     icon: fa-solid:door-closed
-  - label: Entrümpelungen und/oder Wohnungsauflösungen
-    path: clearance
-    icon: heroicons-solid:archive-box-x-mark
   - label: Wartung & Reparatur
     path: maintenance-repair
     icon: heroicons-solid:wrench
